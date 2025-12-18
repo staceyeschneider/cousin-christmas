@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cousin Christmas 2025 | The Great Snowball Battle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Outfit:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+
+<body>
+    <div id="snowflakes"></div>
+    <header>
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <!-- Fallback to remote if local doesn't look right, but trying local first -->
+                <!-- <img src="https://cousinchristmas.us/wp-content/uploads/2022/12/CC-Logo-Transparent.png" alt="Cousin Christmas"> -->
+                <!-- Assuming image 4 was the logo or a main image. Use the remote one for safety for the logo if unsure, as logos are usually PNGs with transparency. -->
+                <img src="assets/images/CC-Logo-Transparent.png" alt="Cousin Christmas">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#players">Players</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="/petty-yeti" style="color: var(--accent-red); font-weight: bold;">Petty Yeti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero"
+        style="background: radial-gradient(circle at center, rgba(30, 64, 110, 0.4) 0%, rgba(5, 16, 28, 1) 100%), url('assets/images/hero-bg.jpg') center/contain no-repeat; background-size: 100% 100%;">
+        <div class="hero-content">
+            <h1>The Great<br>Snowball Battle</h1>
+            <p class="hero-subtitle">December 23-24, 2025</p>
+
+            <div class="countdown-grid" id="countdown">
+                <div class="time-box">
+                    <span class="time-val" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span class="time-val" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span class="time-val" id="minutes">00</span>
+                    <span class="time-label">Mins</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Winter Warfare Awaits</h2>
+                <p class="section-desc">Two teams battle for snowflake supremacy while The Yeti creates absolute chaos.
+                    Eight games, one trophy, zero mercy.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card glass-panel">
+                    <h3>The Mission</h3>
+                    <p>For 30 hours, seven cousins will compete in a series of challenges designed to test reflexes,
+                        creativity, and your ability to not lose it when a 7-year-old steals all your snowballs.</p>
+                    <p>Teams Avalanche and Blizzard will throw, dodge, build, film, and strategize their way to glory.
+                    </p>
+                </div>
+                <div class="card glass-panel">
+                    <h3>Dress Code</h3>
+                    <p>White, off-white, cream, snowman-covered, snow-themed—anything that looks like you got lost in a
+                        blizzard. Bonus points for actual snowman prints.</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="assets/images/meltdown.jpg"
+                        style="width: 100%; max-width: 300px; border-radius: 12px; box-shadow: var(--shadow-lg); margin: 0 auto;"
+                        alt="Meltdown">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="players" class="section"
+        style="background: linear-gradient(to bottom, var(--navy), var(--deep-blue));">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title" style="color: var(--pure-white);">The Roster</h2>
+                <p class="section-desc" style="color: var(--ice-blue);">Two teams. Six kids. One neutral chaos agent.
+                </p>
+            </div>
+            <div class="grid-2">
+                <!-- Team Avalanche -->
+                <div class="card glass-panel team-card team-avalanche">
+                    <div class="team-header">
+                        <div class="team-name font-display">Team Avalanche</div>
+                        <div class="team-subtitle">DEFENDERS OF THE DRIFT</div>
+                    </div>
+                    <div class="roster">
+                        <div class="player">
+                            <img src="assets/images/William.png" class="player-img" onclick="openLightbox(this.src)">
+                            <div class="player-name">William</div>
+                            <div class="player-age">Age 14</div>
+                        </div>
+                        <div class="player">
+                            <img src="assets/images/Lindsey.png" class="player-img" onclick="openLightbox(this.src)">
+                            <div class="player-name">Lindsey</div>
+                            <div class="player-age">Age 13</div>
+                        </div>
+                        <div class="player">
+                            <img src="assets/images/Kaylee.png" class="player-img" onclick="openLightbox(this.src)">
+                            <div class="player-name">Kaylee</div>
+                            <div class="player-age">Age 11</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Blizzard -->
+                <div class="card glass-panel team-card team-blizzard">
+                    <div class="team-header">
+                        <div class="team-name font-display">Team Blizzard</div>
+                        <div class="team-subtitle">MASTERS OF THE STORM</div>
+                    </div>
+                    <div class="roster">
+                        <div class="player">
+                            <img src="assets/images/Johnny.png" class="player-img" onclick="openLightbox(this.src)">
+                            <div class="player-name">Johnny</div>
+                            <div class="player-age">Age 17</div>
+                        </div>
+                        <div class="player">
+                            <img src="assets/images/Adele.png" class="player-img" onclick="openLightbox(this.src)">
+                            <div class="player-name">Addy</div>
+                            <div class="player-age">Age 13</div>
+                        </div>
+                        <div class="player">
+                            <img src="assets/images/Luke.png" class="player-img" onclick="openLightbox(this.src)">
+                            <div class="player-name">Luke</div>
+                            <div class="player-age">Age 11</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The Yeti -->
+            <div class="card glass-panel yeti-card">
+                <img src="assets/images/James.png" class="yeti-img" onclick="openLightbox(this.src)">
+                <div>
+                    <div
+                        style="display: inline-block; background: var(--accent-red); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem;">
+                        CHAOS AGENT</div>
+                    <h3 class="font-display"
+                        style="font-size: 2.2rem; color: var(--pure-white); margin-bottom: 0.5rem;">James · The Yeti
+                    </h3>
+                    <p style="color: #e0e6ed;">Neutral. Unpredictable. Unavoidable. James plays by his own rules, which
+                        mostly involve stealing from everyone and causing maximum chaos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="games" class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">The Eight Games</h2>
+                <p class="section-desc">Eight chances to prove you're the superior cousin.</p>
+            </div>
+            <div class="games-container">
+                <!-- Day 1 Column -->
+                <div class="games-day-1">
+                    <h3 class="game-column-title">December 23</h3>
+
+                    <!-- Game 1: Tree Decorating -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Monday 1:30 PM • Indoor • Boys vs Girls</div>
+                                <h3><i class="fa-solid fa-tree text-accent" style="margin-right: 8px;"></i> Tree
+                                    Decorating</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>Boys vs Girls. Each kid makes a snowman ornament. Teams decorate Boy Tree and Girl
+                                    Tree.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Best Ornament: 5 snowflakes
+                                    • Creativity: 25 pts • Prettiest: 25 pts</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 2: Freeze Tag -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Monday 2:30 PM • Outdoor • Team</div>
+                                <h3><i class="fa-regular fa-snowflake text-accent" style="margin-right: 8px;"></i> Yeti
+                                    Freeze Tag</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>The Snowman guards 100 snowballs at center base. Teams race to steal them.
+                                    James—dressed as a yeti—steals from everyone.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Winning team: 20 snowflakes
+                                    each</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 3: Relay -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Monday 3:30 PM • Outdoor • Pairs</div>
+                                <h3><i class="fa-solid fa-person-running text-accent" style="margin-right: 8px;"></i>
+                                    The Polar Express Relay</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>Pick a partner. Wear ridiculous inflatable costumes. Race through an obstacle course.
+                                    Try not to fall.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Winning pair: 25 snowflakes
+                                    each</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 4: Film -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Monday 6:30 PM • Indoor • Team</div>
+                                <h3><i class="fa-solid fa-video text-accent" style="margin-right: 8px;"></i> Frostbite
+                                    Film Festival</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>Lights. Camera. Snowball. You have 30 minutes to write and film a 1-minute
+                                    masterpiece.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Best Picture: 20 snowflakes
+                                    per person</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 Column -->
+                <div class="games-day-2">
+                    <h3 class="game-column-title">December 24</h3>
+
+                    <!-- Game 5: Shootout -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Tuesday 9:30 AM • Indoor • Team</div>
+                                <h3><i class="fa-solid fa-bullseye text-accent" style="margin-right: 8px;"></i> Snowball
+                                    Shootout</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>Cups on a table. Hidden point values. Half of them are worth zero. Welcome to trust
+                                    issues.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Winning team: 25 snowflakes
+                                    per person</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 6: Arctic Cup -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Tuesday 10:30 AM • Indoor • Solo</div>
+                                <h3><i class="fa-solid fa-trophy text-accent" style="margin-right: 8px;"></i> The Arctic
+                                    Cup</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>Christmas Pong tournament. Single elimination. James gets a bye because it's his
+                                    birthday.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Champion: 25 snowflakes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 7: Yeti's Gauntlet -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Tuesday 11:30 AM • Indoor • Team</div>
+                                <h3><i class="fa-solid fa-dice text-accent" style="margin-right: 8px;"></i> The Yeti's
+                                    Gauntlet</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>Truth or Dare meets Connect 4. Fail a dare, James gets your points.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Winning team: 15 snowflakes
+                                    per person</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game 8: Bullseye -->
+                    <div class="game-item">
+                        <div class="game-header" onclick="toggleGame(this)">
+                            <div class="game-info">
+                                <div class="game-meta">Tuesday Finale • Indoor • Solo</div>
+                                <h3><i class="fa-solid fa-crosshairs text-accent" style="margin-right: 8px;"></i>
+                                    Bullseye</h3>
+                            </div>
+                            <div style="font-size: 1.2rem; color: var(--ice-blue);"><i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="game-details">
+                            <div class="game-content">
+                                <p>Final showdown. Precision counts. Every shot matters.</p>
+                                <div class="prize-badge"><i class="fa-solid fa-trophy"></i> Winner: 30 snowflakes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freeze Tag Image Column -->
+                <div class="freeze-tag-column">
+                    <img src="assets/images/freeze-tag.jpg" alt="Freeze Tag">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="activities" class="section" style="background: var(--deep-blue);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title" style="color: var(--pure-white);">Between the Battles</h2>
+                <p class="section-desc" style="color: var(--pure-white);">Downtime activities for when you need a break
+                    from the chaos.</p>
+            </div>
+            <div class="grid-2">
+                <div class="card glass-panel">
+                    <h3><i class="fa-solid fa-vr-cardboard text-accent"></i> VR Adventures</h3>
+                    <ul style="color: var(--pure-white); line-height: 2;">
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Beat Saber</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Walkabout Mini Golf</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Superhot VR</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Eleven Table Tennis</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Thrill of the Fight 2</li>
+                    </ul>
+                </div>
+                <div class="card glass-panel">
+                    <h3><i class="fa-solid fa-gamepad text-accent"></i> Jackbox Party</h3>
+                    <ul style="color: var(--pure-white); line-height: 2;">
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Trivia Murder Party</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Quiplash</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Tee K.O.</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            You Don't Know Jack</li>
+                        <li><i class="fa-solid fa-check text-accent" style="font-size:0.7rem; margin-right:5px;"></i>
+                            Fakin' It</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">The Menu</h2>
+            <div class="grid-4" style="margin-top: 3rem;">
+                <div class="card glass-panel text-center"
+                    style="display: flex; flex-direction: column; justify-content: center;">
+                    <h4 class="text-accent">Monday</h4>
+                    <p><strong>Lunch:</strong> Lunchables & Snacks</p>
+                    <p><strong>Dinner:</strong> Takeout Vote</p>
+                </div>
+                <div class="card glass-panel text-center"
+                    style="display: flex; flex-direction: column; justify-content: center;">
+                    <h4 class="text-accent">Tuesday</h4>
+                    <p><strong>Breakfast:</strong> Cereal Bar</p>
+                    <p><strong>Lunch:</strong> Leftovers & Snacks</p>
+                </div>
+                <div class="card glass-panel text-center"
+                    style="display: flex; flex-direction: column; justify-content: center;">
+                    <h4 class="text-accent">The Feast</h4>
+                    <p><strong>Appetizers:</strong> CharcuTREE</p>
+                    <p><strong>Dinner:</strong> Ham, Cornbread, Stuffing</p>
+                </div>
+                <div style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/images/frosted-flakes.jpg"
+                        style="width: 100%; max-width: 200px; border-radius: 12px; box-shadow: var(--shadow-lg);"
+                        alt="Frosted Flakes">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Last Year's Carnage</h2>
+            <div class="gallery-grid" style="margin-top: 2rem;">
+                <div class="gallery-item"><img src="assets/images/IMG_9491-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9500-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9502-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9508-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9524-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9525-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9546.jpg" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item"><img src="assets/images/IMG_9557-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9453-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9495-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9510-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9512-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_9517-scaled.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_4862.jpg" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item"><img src="assets/images/IMG_0989-2.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_1010-2.jpg" onclick="openLightbox(this.src)">
+                </div>
+                <div class="gallery-item"><img src="assets/images/IMG_0968.jpg" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item"><img src="assets/images/IMG_1036.jpg" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item"><img src="assets/images/IMG_1035.jpg" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item"><img src="assets/images/IMG_1049.jpg" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item"><img src="assets/images/IMG_4831.jpg" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item"><img src="assets/images/kirby-stacey.png" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <div style="margin-bottom: 2rem;">
+                <h4 style="color: var(--ice-blue); margin-bottom: 1rem;">Battle Archives</h4>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <a href="/2024" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">2024: The
+                        Nutcracker</a>
+                    <a href="/2023" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">2023: Casino</a>
+                    <a href="/2022" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">2022: Reindeer
+                        Games</a>
+                </div>
+            </div>
+            <p>&copy; 2025 Schneider Family Corp. Powered by Christmas magic and questionable decisions.</p>
+        </div>
+    </footer>
+    <!-- Lightbox -->
+    <div id="lightbox"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:2000; justify-content:center; align-items:center; cursor:pointer;"
+        onclick="this.style.display='none'">
+        <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:12px;">
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

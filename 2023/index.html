@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cousin Christmas 2023 | The Christmas Casino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Outfit:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=2">
+    <style>
+        .casino-hero {
+            min-height: 80vh;
+            background: radial-gradient(circle at center, rgba(30, 64, 110, 0.7) 0%, rgba(5, 16, 28, 1) 100%),
+                url('https://cousinchristmas.us/wp-content/uploads/2023/12/Christmas-Casino.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .host-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Horizontal Accordion */
+        .accordion-container {
+            display: flex;
+            width: 100%;
+            height: 500px;
+            gap: 0.5rem;
+            margin-top: 3rem;
+        }
+
+        .accordion-item {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+        }
+
+        .accordion-item:hover {
+            flex: 3;
+            border-color: var(--ice-blue);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .accordion-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+            filter: brightness(0.7);
+        }
+
+        .accordion-item:hover .accordion-bg {
+            filter: brightness(1);
+        }
+
+        .accordion-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            color: white;
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-title {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+            color: var(--ice-blue);
+            white-space: nowrap;
+        }
+
+        .accordion-desc {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            font-size: 0.9rem;
+            color: #e0e6ed;
+        }
+
+        .accordion-item:hover .accordion-desc {
+            max-height: 100px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--glass-border);
+            background: black;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .accordion-container {
+                flex-direction: column;
+                height: 800px;
+            }
+
+            .accordion-item:hover {
+                flex: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-content">
+            <a href="/" class="logo">
+                <img src="../assets/images/CC-Logo-Transparent.png" alt="Cousin Christmas">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/">Back to 2025</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="casino-hero">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 2rem;">
+                <!-- Video inserted here -->
+                <div
+                    style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--glass-border);">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/3cM4t8il_iU"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+                            allowfullscreen title="2023 Intro"></iframe>
+                    </div>
+                </div>
+                <div class="hero-content" style="text-align: left;">
+                    <h1 class="font-display" style="font-size: clamp(3rem, 6vw, 5rem); color: var(--pure-white);">The
+                        Christmas
+                        Casino</h1>
+                    <p class="hero-subtitle">Cousin Christmas 2023</p>
+                    <p style="font-size: 1.2rem; color: var(--text-muted);">
+                        It's the jolliest, hip-hop holliest time of the year! What happens in the casino stays in the
+                        casino.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">The Players</h2>
+                <p class="section-desc">The high rollers of 2023.</p>
+            </div>
+
+            <div class="grid-2" style="margin-bottom: 2rem; gap: 3rem;">
+                <!-- The Boys -->
+                <div>
+                    <h3 class="text-center font-display"
+                        style="font-size: 2rem; color: var(--ice-blue); margin-bottom: 1rem;">The Boys</h3>
+                    <div
+                        style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--glass-border); margin-bottom: 1.5rem;">
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe src="https://www.youtube.com/embed/NRkIe-Hs6NU"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+                                allowfullscreen title="Boys Dance"></iframe>
+                        </div>
+                    </div>
+                    <div class="accordion-container" style="height: 300px;">
+                        <!-- Johnny -->
+                        <div class="accordion-item">
+                            <img src="https://cousinchristmas.us/wp-content/uploads/2023/12/Johnny-1.gif"
+                                class="accordion-bg" alt="Johnny">
+                            <div class="accordion-content">
+                                <div class="accordion-title">Johnny</div>
+                                <div class="accordion-desc">The High Roller</div>
+                            </div>
+                        </div>
+                        <!-- William -->
+                        <div class="accordion-item">
+                            <img src="https://cousinchristmas.us/wp-content/uploads/2023/12/William.gif"
+                                class="accordion-bg" alt="William">
+                            <div class="accordion-content">
+                                <div class="accordion-title">William</div>
+                                <div class="accordion-desc">Wild Card</div>
+                            </div>
+                        </div>
+                        <!-- Luke -->
+                        <div class="accordion-item">
+                            <img src="https://cousinchristmas.us/wp-content/uploads/2023/12/Luke.gif"
+                                class="accordion-bg" alt="Luke">
+                            <div class="accordion-content">
+                                <div class="accordion-title">Luke</div>
+                                <div class="accordion-desc">All In</div>
+                            </div>
+                        </div>
+                        <!-- James -->
+                        <div class="accordion-item">
+                            <img src="https://cousinchristmas.us/wp-content/uploads/2023/12/James-1.gif"
+                                class="accordion-bg" alt="James">
+                            <div class="accordion-content">
+                                <div class="accordion-title">James</div>
+                                <div class="accordion-desc">House Advantage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Girls -->
+                <div>
+                    <h3 class="text-center font-display"
+                        style="font-size: 2rem; color: var(--ice-blue); margin-bottom: 1rem;">The Girls</h3>
+                    <div
+                        style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--glass-border); margin-bottom: 1.5rem;">
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe src="https://www.youtube.com/embed/QdXsbAb9QP0"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+                                allowfullscreen title="Girls Dance"></iframe>
+                        </div>
+                    </div>
+                    <div class="accordion-container" style="height: 300px;">
+                        <!-- Adele -->
+                        <div class="accordion-item">
+                            <img src="https://cousinchristmas.us/wp-content/uploads/2023/12/Addy-1.gif"
+                                class="accordion-bg" alt="Adele">
+                            <div class="accordion-content">
+                                <div class="accordion-title">Adele</div>
+                                <div class="accordion-desc">Poker Face</div>
+                            </div>
+                        </div>
+                        <!-- Lindsey -->
+                        <div class="accordion-item">
+                            <img src="https://cousinchristmas.us/wp-content/uploads/2023/12/Lindsey-1.gif"
+                                class="accordion-bg" alt="Lindsey">
+                            <div class="accordion-content">
+                                <div class="accordion-title">Lindsey</div>
+                                <div class="accordion-desc">Slot Machine Queen</div>
+                            </div>
+                        </div>
+                        <!-- Kaylee -->
+                        <div class="accordion-item">
+                            <img src="https://cousinchristmas.us/wp-content/uploads/2023/12/kk-1.gif"
+                                class="accordion-bg" alt="Kaylee">
+                            <div class="accordion-content">
+                                <div class="accordion-title">Kaylee</div>
+                                <div class="accordion-desc">Double or Nothing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card glass-panel" style="margin-top: 2rem; text-align: center;">
+                <h3><i class="fa-solid fa-shirt text-accent"></i> Player Uniform</h3>
+                <p>Outdoor clothes, Christmas pajamas, and your Christmas spirit!!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--deep-blue);">
+        <div class="container">
+            <div class="grid-2" style="margin-top: 3rem; align-items: start;">
+                <div>
+                    <h2 class="section-title" style="color: var(--pure-white); text-align: left;">The Hosts & Judges
+                    </h2>
+                    <p class="section-desc" style="color: var(--ice-blue); text-align: left;">Also available for
+                        cuddles, kisses, karaoke, and jokes.</p>
+
+                    <div class="card glass-panel host-card" style="margin-bottom: 1rem; text-align: left;">
+                        <h3 class="text-accent">Gaga</h3>
+                        <p>OG Chief Elf, The Good Angel, First Kid To Chop A Christmas Tree.</p>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">Voted Family Favorite 5
+                            Years Running</p>
+                    </div>
+                    <div class="card glass-panel host-card" style="margin-bottom: 1rem; text-align: left;">
+                        <h3 class="text-accent">Kirby</h3>
+                        <p>House Hip Hop Star, Fa La La La's the Loudest, Sugar Plum Fairy in Disguise.</p>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">On The Nice List</p>
+                    </div>
+                    <div class="card glass-panel host-card" style="text-align: left;">
+                        <h3 class="text-accent">Larry</h3>
+                        <p>Voted Best Mustache, Professional Hat Wearer, Snowball Fight Instigator.</p>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">Scared of Sitting on
+                            Santa's Lap</p>
+                    </div>
+                </div>
+                <div
+                    style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--glass-border); margin-top: 2rem;">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/oAHxS5trBpc"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+                            allowfullscreen title="Hosts Video"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="card glass-panel text-center" style="margin-top: 2rem; border-color: var(--accent-red);">
+                <h3 style="color: var(--accent-red); margin-bottom: 0.5rem;">WARNING</h3>
+                <p>Spending too much time with us may cause uncontrollable laughter, spontaneous caroling, and an
+                    insatiable appetite for cookies.</p>
+                <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">Note: Alcohol will not be served until 3
+                    pm, when parents come. Otherwise, alcohol will be served at Cousin Christmas in 2033.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Casino Games</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem auto; color: var(--text-muted);">
+                This year, winning made cents! The winner was the player who had the biggest pot of winnings.
+                Coins were won by gambling, as prizes, and for Christmas Spirit.
+            </p>
+
+            <div class="grid-3">
+                <div class="card glass-panel">
+                    <h3><i class="fas fa-tree text-accent"></i> Tree Trimming</h3>
+                    <p style="margin-top: 0.5rem;">Girls vs Boys decorating trees.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--ice-blue);">
+                        <li>Best looking: 200 Coins</li>
+                        <li>Fastest: 100 Coins</li>
+                    </ul>
+                </div>
+                <div class="card glass-panel">
+                    <h3><i class="fas fa-glass-cheers text-accent"></i> Santa Shots</h3>
+                    <p style="margin-top: 0.5rem;">Christmas Pong Tournament.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--ice-blue);">
+                        <li>Winner: 300 Coins</li>
+                        <li>2nd: 200 Coins</li>
+                        <li>Game Win: 25 Coins</li>
+                    </ul>
+                </div>
+                <div class="card glass-panel">
+                    <h3><i class="fas fa-heart text-accent"></i> Rudolph Royale</h3>
+                    <p style="margin-top: 0.5rem;">Blackjack to 21.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--ice-blue);">
+                        <li>House pays 2:1 odds</li>
+                        <li>Table Min: 5 Coins</li>
+                    </ul>
+                </div>
+                <div class="card glass-panel">
+                    <h3><i class="fas fa-user-astronaut text-accent"></i> Beard Growing</h3>
+                    <p style="margin-top: 0.5rem;">Minute to win it! Biggest shaving cream beard wins.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--ice-blue);">
+                        <li>Winner: 100 Coins</li>
+                        <li>2nd: 50 Coins</li>
+                    </ul>
+                </div>
+                <div class="card glass-panel">
+                    <h3><i class="fas fa-candy-cane text-accent"></i> Candy Cane Roulette</h3>
+                    <p style="margin-top: 0.5rem;">Spin the cane. Lose a kiss if it points to you.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--ice-blue);">
+                        <li>Last player: 100 Coins</li>
+                    </ul>
+                </div>
+                <div class="card glass-panel">
+                    <h3><i class="fas fa-music text-accent"></i> Snowdown Hoedown</h3>
+                    <p style="margin-top: 0.5rem;">Dance party and karaoke with LASERS.</p>
+                    <ul style="margin-top: 1rem; font-size: 0.9rem; color: var(--ice-blue);">
+                        <li>Most Spirit: 100 Coins</li>
+                        <li>Best Dancer: 100 Coins</li>
+                        <li>Best Singer: 100 Coins</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--deep-blue);">
+        <div class="container">
+            <h2 class="section-title text-center">The Feast</h2>
+            <div class="grid-2" style="margin-top: 3rem;">
+                <div class="card glass-panel">
+                    <h3 class="text-accent">The Deal</h3>
+                    <p>We cook for the adults! Popcorn balls are back.</p>
+                </div>
+                <div class="card glass-panel">
+                    <h3 class="text-accent">The Menu</h3>
+                    <ul class="fa-ul" style="margin-left: 1.5rem; line-height: 1.8;">
+                        <li><span class="fa-li"><i class="fas fa-tree text-accent"></i></span><strong>Christmas Tree
+                                Spinach Bread Dip:</strong> Lindsey</li>
+                        <li><span class="fa-li"><i class="fas fa-hamburger text-accent"></i></span><strong>Reindeer
+                                Sliders:</strong> KK</li>
+                        <li><span class="fa-li"><i
+                                    class="fas fa-bread-slice text-accent"></i></span><strong>Stuffing:</strong> James
+                            (from a box, carbtastic)</li>
+                        <li><span class="fa-li"><i class="fas fa-carrot text-accent"></i></span><strong>Corn &
+                                Rolls:</strong> Luke</li>
+                        <li><span class="fa-li"><i class="fas fa-utensils text-accent"></i></span><strong>Pasta
+                                Salad:</strong> Adele (Her specialty)</li>
+                        <li><span class="fa-li"><i class="fas fa-bacon text-accent"></i></span><strong>Bacon Ranch
+                                Fries:</strong> William</li>
+                        <li><span class="fa-li"><i class="fas fa-drumstick-bite text-accent"></i></span><strong>Grilled
+                                Chicken:</strong> Johnny</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Schneider Family Corp. Past Campaigns.</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:2000; justify-content:center; align-items:center; cursor:pointer;"
+        onclick="this.style.display='none'">
+        <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:12px;">
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        document.querySelectorAll('.player-img').forEach(img => {
+            img.onclick = function () {
+                openLightbox(this.src);
+            }
+        });
+    </script>
+</body>
+
+</html>
