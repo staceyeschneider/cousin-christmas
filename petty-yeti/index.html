@@ -109,11 +109,24 @@
             }
         }
 
-        .decorative-yeti {
-            max-width: 250px;
-            margin-bottom: 2rem;
-            filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.2));
+        .yeti-circle {
+            width: 300px;
+            height: 300px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            box-shadow: 0 0 50px rgba(189, 224, 254, 0.3);
             animation: float 5s ease-in-out infinite reverse;
+        }
+
+        .decorative-yeti {
+            max-width: 220px;
+            max-height: 220px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
         }
 
         .back-link {
@@ -129,6 +142,21 @@
         .back-link:hover {
             color: white;
         }
+
+        .host-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.9rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .host-link:hover {
+            color: white;
+        }
     </style>
 </head>
 
@@ -138,13 +166,19 @@
     <div class="snowflakes" id="snowflakes"></div>
 
     <div class="container">
-        <img src="../assets/images/yeti-santa.png" alt="Yeti" class="decorative-yeti">
+        <div class="yeti-circle">
+            <img src="../assets/images/yeti-santa.png" alt="Yeti" class="decorative-yeti">
+        </div>
 
         <h1>Petty Yeti</h1>
         <p class="subtitle">The Ultimate Trivia Showdown</p>
 
         <a href="https://petty-yeti.netlify.app/" class="btn-play">
             PLAY GAME
+        </a>
+        <br>
+        <a href="/petty-yeti/host" class="host-link">
+            <i class="fa-solid fa-lock" style="font-size: 0.8em;"></i> Host Portal
         </a>
     </div>
 
