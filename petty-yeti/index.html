@@ -11,278 +11,174 @@
         href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Outfit:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css?v=2">
     <style>
         :root {
             --petty-navy: #05101c;
             --petty-blue: #bde0fe;
             --petty-pink: #ffafcc;
             --petty-orange: #ffc8dd;
+            --font-display: 'Mountains of Christmas', cursive;
+            --font-body: 'Outfit', sans-serif;
         }
 
-        .yeti-hero {
-            min-height: 90vh;
-            background: linear-gradient(180deg, rgba(5, 16, 28, 0.8) 0%, #05101c 100%),
-                url('../assets/images/hero-bg.jpg') center/cover no-repeat;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--petty-navy);
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+            /* Sticky footer/no scroll */
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding-top: 80px;
-            position: relative;
-            overflow: hidden;
+            background: radial-gradient(circle at center, #1a2c42 0%, #05101c 100%);
         }
 
-        .yeti-hero::before {
-            content: '';
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 10vw, 8rem);
+            color: white;
+            text-shadow: 0 0 20px rgba(189, 224, 254, 0.5);
+            line-height: 1;
+            margin-bottom: 1rem;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        p.subtitle {
+            font-size: 1.5rem;
+            color: var(--petty-blue);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .btn-play {
+            background: white;
+            color: var(--petty-navy);
+            font-family: var(--font-display);
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 1rem 4rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border: 4px solid var(--petty-blue);
+        }
+
+        .btn-play:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 20px 40px rgba(189, 224, 254, 0.4);
+            background: var(--petty-blue);
+        }
+
+        .snowflakes {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 50% 50%, rgba(189, 224, 254, 0.1) 0%, transparent 60%);
             pointer-events: none;
+            z-index: 1;
         }
 
-        .hero-title {
-            font-size: clamp(4rem, 10vw, 8rem);
-            color: white;
-            text-transform: uppercase;
-            line-height: 0.9;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 30px rgba(189, 224, 254, 0.5);
-            animation: pulse-glow 3s infinite alternate;
-        }
-
-        @keyframes pulse-glow {
-            from {
-                text-shadow: 0 0 20px rgba(189, 224, 254, 0.3);
-            }
-
-            to {
-                text-shadow: 0 0 40px rgba(189, 224, 254, 0.6), 0 0 80px rgba(189, 224, 254, 0.2);
-            }
-        }
-
-        .yeti-card {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-        }
-
-        .yeti-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(189, 224, 254, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        .yeti-face {
-            width: 140px;
-            height: 140px;
-            object-fit: contain;
-            filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
-            transition: transform 0.3s ease;
-        }
-
-        .yeti-card:hover .yeti-face {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .btn-launch {
-            background: linear-gradient(135deg, var(--accent-red), #ff4444);
-            border: none;
-            box-shadow: 0 0 20px rgba(255, 68, 68, 0.4);
-            padding: 1rem 3rem;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-launch:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 30px rgba(255, 68, 68, 0.6);
-        }
-
-        .btn-host {
-            background: transparent;
-            border: 2px solid var(--petty-blue);
-            color: var(--petty-blue);
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-host:hover {
-            background: var(--petty-blue);
-            color: var(--petty-navy);
-            box-shadow: 0 0 20px rgba(189, 224, 254, 0.4);
-        }
-
-        /* Floating animation */
-        @keyframes float-yeti {
+        @keyframes float {
 
             0%,
             100% {
-                transform: translateY(0px) rotate(0deg);
+                transform: translateY(0);
             }
 
             50% {
-                transform: translateY(-20px) rotate(2deg);
+                transform: translateY(-20px);
             }
         }
 
-        .floating-yeti {
-            animation: float-yeti 6s ease-in-out infinite;
+        .decorative-yeti {
+            max-width: 250px;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.2));
+            animation: float 5s ease-in-out infinite reverse;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            font-size: 0.9rem;
+            z-index: 20;
+        }
+
+        .back-link:hover {
+            color: white;
         }
     </style>
 </head>
 
 <body>
-    <div id="snowflakes"></div>
+    <a href="/" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Cousin Christmas</a>
 
-    <header>
-        <div class="container nav-content">
-            <a href="/" class="logo">
-                <img src="../assets/images/CC-Logo-Transparent.png" alt="Cousin Christmas">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="/">Back to 2025</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="snowflakes" id="snowflakes"></div>
 
-    <section class="yeti-hero">
-        <div class="container">
-            <div class="grid-2" style="align-items: center; gap: 4rem;">
-                <div class="text-left" style="position: relative; z-index: 2;">
-                    <div
-                        style="display: inline-block; background: rgba(189, 224, 254, 0.1); padding: 0.5rem 1rem; border-radius: 50px; border: 1px solid rgba(189, 224, 254, 0.3); color: var(--petty-blue); font-weight: bold; font-size: 0.9rem; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px;">
-                        <i class="fa-regular fa-snowflake"></i> The Main Event
-                    </div>
-                    <h1 class="font-display hero-title">Petty<br>Yeti</h1>
-                    <p class="hero-subtitle"
-                        style="color: var(--petty-blue); font-size: 1.5rem; letter-spacing: 4px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; display: inline-block;">
-                        You Vs. The Block</p>
+    <div class="container">
+        <img src="../assets/images/yeti-santa.png" alt="Yeti" class="decorative-yeti">
 
-                    <p style="font-size: 1.2rem; color: #a0aab5; margin: 2rem 0; line-height: 1.8; max-width: 500px;">
-                        The traditions are old, but the grudge is fresh. Join the lobby, pick a team, and prepare for
-                        judgment.
-                    </p>
+        <h1>Petty Yeti</h1>
+        <p class="subtitle">The Ultimate Trivia Showdown</p>
 
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="#play" class="btn btn-launch">Play Now</a>
-                    </div>
-                </div>
-                <div class="floating-yeti" style="position: relative;">
-                    <div
-                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; background: radial-gradient(circle, rgba(189, 224, 254, 0.1) 0%, transparent 70%); pointer-events: none;">
-                    </div>
-                    <img src="../assets/images/yeti-santa.png" alt="Petty Yeti"
-                        style="max-width: 100%; min-width: 300px; filter: drop-shadow(0 0 30px rgba(0,0,0,0.5));">
-                </div>
-            </div>
-        </div>
-    </section>
+        <a href="https://petty-yeti.netlify.app/" class="btn-play">
+            PLAY GAME
+        </a>
+    </div>
 
-    <section class="section" style="background: #081624;">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title" style="font-size: 3rem;">Meet The Judge</h2>
-                <div
-                    style="width: 60px; height: 4px; background: var(--petty-blue); margin: 1rem auto; border-radius: 2px;">
-                </div>
-                <p class="section-desc">He's watching. He's waiting. He's judging.</p>
-            </div>
+    <script>
+        // Simple Snow Effect
+        const snowflakesContainer = document.getElementById('snowflakes');
+        const snowflakeCount = 50;
 
-            <div class="grid-4" style="margin-top: 4rem;">
-                <div class="card yeti-card text-center">
-                    <img src="../assets/images/yeti-happy.png" alt="Happy Yeti" class="yeti-face">
-                    <h3 style="margin-top: 1.5rem; color: var(--petty-blue);">The Winner</h3>
-                    <p style="font-size: 0.9rem; color: #8fa0b0;">Rarely seen. Only appears when someone actually
-                        performs a miracle.</p>
-                </div>
-                <div class="card yeti-card text-center">
-                    <img src="../assets/images/yeti-tease.png" alt="Tease Yeti" class="yeti-face">
-                    <h3 style="margin-top: 1.5rem; color: var(--petty-orange);">The Tease</h3>
-                    <p style="font-size: 0.9rem; color: #8fa0b0;">He knows you don't know the answer. And he absolutely
-                        loves it.</p>
-                </div>
-                <div class="card yeti-card text-center">
-                    <img src="../assets/images/yeti-scary.png" alt="Scary Yeti" class="yeti-face">
-                    <h3 style="margin-top: 1.5rem; color: var(--accent-red);">The Beast</h3>
-                    <p style="font-size: 0.9rem; color: #8fa0b0;">Wrong answer? Too slow? Prepare for the freeze.</p>
-                </div>
-                <div class="card yeti-card text-center">
-                    <img src="../assets/images/yeti-santa.png" alt="Santa Yeti" class="yeti-face">
-                    <h3 style="margin-top: 1.5rem; color: white;">The Festive</h3>
-                    <p style="font-size: 0.9rem; color: #8fa0b0;">He's got a hat. That's about as jolly as he ever gets.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        for (let i = 0; i < snowflakeCount; i++) {
+            const el = document.createElement('div');
+            el.style.position = 'absolute';
+            el.style.left = Math.random() * 100 + '%';
+            el.style.top = -10 + 'px';
+            el.style.color = 'rgba(255,255,255,' + (Math.random() * 0.5 + 0.1) + ')';
+            el.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            el.innerHTML = '❄';
+            el.style.animation = `fall ${Math.random() * 5 + 5}s linear infinite`;
+            el.style.animationDelay = Math.random() * 5 + 's';
 
-    <section id="play" class="section" style="background: linear-gradient(180deg, #081624 0%, #05101c 100%);">
-        <div class="container text-center">
+            // Add keyframes dynamically if needed, but simple CSS is easier usually.
+            // Let's just do inline style injection for the keyframes to be self-contained
+            snowflakesContainer.appendChild(el);
+        }
 
-            <div class="card glass-panel"
-                style="padding: 4rem 2rem; max-width: 800px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.1); background: rgba(5, 16, 28, 0.8);">
-                <div style="margin-bottom: 2rem;">
-                    <i class="fa-solid fa-gamepad"
-                        style="font-size: 4rem; background: -webkit-linear-gradient(var(--petty-pink), var(--petty-orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(255, 175, 204, 0.4));"></i>
-                </div>
-
-                <h3 class="font-display" style="font-size: 3.5rem; margin-bottom: 1rem; color: white;">Ready to Play?
-                </h3>
-                <p style="margin-bottom: 3rem; font-size: 1.2rem; color: #a0aab5;">
-                    The game is live. Join the lobby on your phone or launch the main screen if you're the brave host.
-                </p>
-
-                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://petty-yeti.netlify.app/" class="btn btn-launch">
-                        <i class="fa-solid fa-play" style="margin-right: 0.5rem;"></i> Launch Game
-                    </a>
-
-                    <a href="/petty-yeti/host" class="btn btn-host">
-                        <i class="fa-solid fa-lock" style="margin-right: 0.5rem;"></i> Host Portal
-                    </a>
-                </div>
-
-                <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.5;">
-                    *Host portal requires access code.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container text-center">
-            <div style="margin-bottom: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
-                <h4
-                    style="color: var(--petty-blue); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">
-                    Battle Archives</h4>
-                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                    <a href="/2024" class="btn"
-                        style="padding: 0.5rem 1.5rem; font-size: 0.8rem; background: rgba(255,255,255,0.05);">2024</a>
-                    <a href="/2023" class="btn"
-                        style="padding: 0.5rem 1.5rem; font-size: 0.8rem; background: rgba(255,255,255,0.05);">2023</a>
-                    <a href="/2022" class="btn"
-                        style="padding: 0.5rem 1.5rem; font-size: 0.8rem; background: rgba(255,255,255,0.05);">2022</a>
-                </div>
-            </div>
-            <p style="opacity: 0.4; font-size: 0.8rem;">&copy; 2025 Schneider Family Corp. | <span
-                    style="color: var(--petty-pink);">Beware of Yeti</span></p>
-        </div>
-    </footer>
-
-    <script src="../assets/js/script.js"></script>
+        const styleSheet = document.createElement("style");
+        styleSheet.innerText = `
+            @keyframes fall {
+                to {
+                    transform: translateY(110vh) rotate(360deg);
+                }
+            }
+        `;
+        document.head.appendChild(styleSheet);
+    </script>
 </body>
 
 </html>
