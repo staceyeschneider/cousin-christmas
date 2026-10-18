@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --evergreen: #123d2c;
-            --pine: #0b2a1e;
-            --holly: #1f5a40;
+            --evergreen: #0f223d;
+            --pine: #05101c;
+            --holly: #1e406e;
             --cranberry: #a4161a;
             --santa: #d62828;
             --gold: #d4a64a;
@@ -24,7 +24,7 @@
             --ink: #2b1d14;
             --ink-soft: #6b5544;
             --radius: 14px;
-            --knit: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32'%3E%3Crect width='40' height='32' fill='%23a4161a'/%3E%3Cg fill='%23fbf3e4'%3E%3Crect x='8' y='2' width='4' height='4'/%3E%3Crect x='28' y='2' width='4' height='4'/%3E%3Cpath d='M20 8 L29 16 L20 24 L11 16Z'/%3E%3Cpath d='M0 8 L9 16 L0 24Z M40 8 L31 16 L40 24Z'/%3E%3Crect x='8' y='26' width='4' height='4'/%3E%3Crect x='28' y='26' width='4' height='4'/%3E%3C/g%3E%3Cpath d='M20 12 L24.5 16 L20 20 L15.5 16Z' fill='%23123d2c'/%3E%3C/svg%3E");
+            --knit: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32'%3E%3Crect width='40' height='32' fill='%23a4161a'/%3E%3Cg fill='%23fbf3e4'%3E%3Crect x='8' y='2' width='4' height='4'/%3E%3Crect x='28' y='2' width='4' height='4'/%3E%3Cpath d='M20 8 L29 16 L20 24 L11 16Z'/%3E%3Cpath d='M0 8 L9 16 L0 24Z M40 8 L31 16 L40 24Z'/%3E%3Crect x='8' y='26' width='4' height='4'/%3E%3Crect x='28' y='26' width='4' height='4'/%3E%3C/g%3E%3Cpath d='M20 12 L24.5 16 L20 20 L15.5 16Z' fill='%230f223d'/%3E%3C/svg%3E");
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -86,7 +86,7 @@
             display: flex; justify-content: space-around; pointer-events: none;
         }
         .lights::before {
-            content: ''; position: absolute; left: 0; right: 0; top: 6px; height: 2px; background: #0a1f16;
+            content: ''; position: absolute; left: 0; right: 0; top: 6px; height: 2px; background: #020810;
         }
         .lights span {
             position: relative;
@@ -103,12 +103,13 @@
         nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
             padding-top: 24px;
-            background: rgba(11, 42, 30, 0.92);
+            background: rgba(5, 16, 28, 0.92);
             backdrop-filter: blur(8px);
             border-bottom: 3px solid var(--cranberry);
         }
-        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
-        .logo img { height: 42px; width: auto; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+        .logo img { width: 220px; height: auto; background: #ffffff; padding: 5px; border-radius: 8px; }
+        @media (max-width: 480px) { .logo img { width: 170px; } }
         .nav-links { display: flex; gap: 1.6rem; font-weight: 600; font-size: 0.95rem; color: var(--cream); }
         .nav-links a:hover { color: var(--gold-soft); }
         @media (max-width: 760px) { .nav-links { display: none; } }
@@ -117,9 +118,9 @@
         .hero {
             position: relative;
             overflow: hidden;
-            padding: 150px 0 5rem;
+            padding: 165px 0 5rem;
             background:
-                radial-gradient(ellipse at 70% 40%, rgba(212, 166, 74, 0.18), transparent 60%),
+                radial-gradient(ellipse at 70% 40%, rgba(79, 163, 224, 0.18), transparent 60%),
                 linear-gradient(180deg, var(--pine) 0%, var(--evergreen) 100%);
             color: var(--cream);
         }
@@ -353,7 +354,7 @@
         /* ---------- Lightbox ---------- */
         #lightbox {
             display: none; position: fixed; inset: 0; z-index: 2000;
-            background: rgba(11, 42, 30, 0.95);
+            background: rgba(5, 16, 28, 0.95);
             justify-content: center; align-items: center; cursor: pointer; padding: 1rem;
         }
         #lightbox img { max-width: 92%; max-height: 90%; border-radius: 10px; border: 8px solid var(--cream); }
