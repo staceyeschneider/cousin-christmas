@@ -336,6 +336,14 @@
         .gallery-item { aspect-ratio: 1; overflow: hidden; border-radius: 10px; cursor: pointer; background: var(--paper); }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
         .gallery-item:hover img { transform: scale(1.06); }
+        .gallery-item.video { position: relative; }
+        .gallery-item .play {
+            position: absolute; inset: 0; margin: auto; width: 58px; height: 58px; border-radius: 50%;
+            display: grid; place-items: center; padding-left: 4px;
+            background: rgba(164, 22, 26, 0.88); color: var(--cream); font-size: 1.3rem;
+            box-shadow: 0 0 0 4px rgba(251, 243, 228, 0.85); pointer-events: none;
+        }
+        #lightbox video { max-width: 92%; max-height: 90%; border-radius: 10px; border: 8px solid var(--cream); background: #000; }
 
         /* ---------- Archives ---------- */
         .archive-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.85rem; }
@@ -614,30 +622,19 @@
             <div class="center">
                 <span class="kicker">Rewind</span>
                 <h2>Last Year's Carnage</h2>
-                <p class="lede">2025: The Great Snowball Battle. Exhibit A for why we're keeping it chill this year.</p>
+                <p class="lede">2025: The Great Snowball Battle. Tap the videos for sound. Exhibit A for why we're keeping it chill this year.</p>
             </div>
             <div class="gallery">
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9491-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9500-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9502-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9508-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9524-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9525-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9546.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9557-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9453-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9495-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9510-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9512-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_9517-scaled.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_4862.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_1010-2.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_0968.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_1036.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_1035.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_1049.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/IMG_4831.jpg" alt="" onclick="openLightbox(this.src)"></div>
-                <div class="gallery-item"><img loading="lazy" src="assets/images/kirby-stacey.png" alt="" onclick="openLightbox(this.src)"></div>
+                <div class="gallery-item video" onclick="openLightbox('assets/2025/2025-video-10662.mp4')"><img loading="lazy" src="assets/2025/2025-video-10662-poster.jpg" alt=""><span class="play"><i class="fa-solid fa-play"></i></span></div>
+                <div class="gallery-item" onclick="openLightbox('assets/2025/2025-IMG_4158.jpg')"><img loading="lazy" src="assets/2025/2025-IMG_4158.jpg" alt=""></div>
+                <div class="gallery-item" onclick="openLightbox('assets/2025/2025-IMG_4198.jpg')"><img loading="lazy" src="assets/2025/2025-IMG_4198.jpg" alt=""></div>
+                <div class="gallery-item" onclick="openLightbox('assets/2025/2025-IMG_4159.jpg')"><img loading="lazy" src="assets/2025/2025-IMG_4159.jpg" alt=""></div>
+                <div class="gallery-item video" onclick="openLightbox('assets/2025/2025-IMG_4164.mp4')"><img loading="lazy" src="assets/2025/2025-IMG_4164-poster.jpg" alt=""><span class="play"><i class="fa-solid fa-play"></i></span></div>
+                <div class="gallery-item" onclick="openLightbox('assets/2025/2025-IMG_4172.jpg')"><img loading="lazy" src="assets/2025/2025-IMG_4172.jpg" alt=""></div>
+                <div class="gallery-item" onclick="openLightbox('assets/2025/2025-IMG_4190.jpg')"><img loading="lazy" src="assets/2025/2025-IMG_4190.jpg" alt=""></div>
+                <div class="gallery-item video" onclick="openLightbox('assets/2025/2025-IMG_4165.mp4')"><img loading="lazy" src="assets/2025/2025-IMG_4165-poster.jpg" alt=""><span class="play"><i class="fa-solid fa-play"></i></span></div>
+                <div class="gallery-item" onclick="openLightbox('assets/2025/2025-IMG_4202.jpg')"><img loading="lazy" src="assets/2025/2025-IMG_4202.jpg" alt=""></div>
+                <div class="gallery-item" onclick="openLightbox('assets/2025/2025-photo-10633.jpg')"><img loading="lazy" src="assets/2025/2025-photo-10633.jpg" alt=""></div>
             </div>
         </div>
     </section>
@@ -664,8 +661,9 @@
         </div>
     </footer>
 
-    <div id="lightbox" onclick="this.style.display='none'">
+    <div id="lightbox" onclick="closeLightbox()">
         <img id="lightbox-img" src="" alt="">
+        <video id="lightbox-video" controls playsinline onclick="event.stopPropagation()"></video>
     </div>
 
     <script>
@@ -721,9 +719,20 @@
         })();
 
         function openLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
+            const img = document.getElementById('lightbox-img');
+            const vid = document.getElementById('lightbox-video');
+            const isVideo = /\.mp4$/i.test(src);
+            img.style.display = isVideo ? 'none' : 'block';
+            vid.style.display = isVideo ? 'block' : 'none';
+            if (isVideo) { vid.src = src; vid.play().catch(() => {}); } else { img.src = src; }
             document.getElementById('lightbox').style.display = 'flex';
         }
+        function closeLightbox() {
+            const vid = document.getElementById('lightbox-video');
+            vid.pause(); vid.removeAttribute('src'); vid.load();
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
     </script>
 </body>
 
