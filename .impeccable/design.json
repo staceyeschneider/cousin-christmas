@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T21:45:15.210777+00:00",
+  "title": "Design System: Cousin Christmas 2026 \u2014 Cabin Christmas",
+  "extensions": {
+    "colorMeta": {
+      "walnut": {
+        "role": "primary",
+        "displayName": "Walnut Stain"
+      },
+      "cream": {
+        "role": "primary",
+        "displayName": "Routed Cream"
+      },
+      "night": {
+        "role": "secondary",
+        "displayName": "Blue Ridge Night"
+      },
+      "blaze": {
+        "role": "tertiary",
+        "displayName": "Trail Blaze"
+      },
+      "ember": {
+        "role": "tertiary",
+        "displayName": "Ember"
+      },
+      "flannel": {
+        "role": "tertiary",
+        "displayName": "Buffalo Flannel"
+      },
+      "pine": {
+        "role": "tertiary",
+        "displayName": "Pine Plate"
+      },
+      "cream-dim": {
+        "role": "neutral",
+        "displayName": "Cream Dim"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Ultra display",
+        "purpose": "Hero title only."
+      },
+      "headline": {
+        "displayName": "Routed section sign",
+        "purpose": "Section headings."
+      },
+      "sign": {
+        "displayName": "Sign board",
+        "purpose": "Arrow boards, nameplates, board titles."
+      },
+      "body": {
+        "displayName": "Overpass body",
+        "purpose": "Running copy."
+      },
+      "label": {
+        "displayName": "Overpass label",
+        "purpose": "Uppercase sign subs, dates, times."
+      }
+    },
+    "shadows": [
+      {
+        "name": "board",
+        "value": "0 10px 24px -8px rgba(0,0,0,0.65), 0 2px 4px rgba(0,0,0,0.35)",
+        "purpose": "Wood boards and frames."
+      },
+      {
+        "name": "paper",
+        "value": "0 18px 30px -12px rgba(0,0,0,0.7)",
+        "purpose": "Notices, polaroids, PJ patch."
+      },
+      {
+        "name": "bulb",
+        "value": "0 0 14px 3px rgba(255,195,107,0.55)",
+        "purpose": "String-light bulbs only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Hover lifts and sign straightening."
+      },
+      {
+        "name": "swing",
+        "value": "1.6s swing keyframes on hero boards",
+        "purpose": "The one authored load moment."
+      },
+      {
+        "name": "snow",
+        "value": "canvas snowfall in hero",
+        "purpose": "Ambient; off under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lg",
+        "value": "1000px"
+      },
+      {
+        "name": "md",
+        "value": "820px"
+      },
+      {
+        "name": "sm",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Plank Button",
+      "kind": "button",
+      "refersTo": "button-plank",
+      "description": "Primary external action (directions, cabin listing).",
+      "html": "<a class=\"ds-plank\" href=\"#\">Get directions</a>",
+      "css": ".ds-plank{display:inline-flex;gap:.55rem;padding:.85rem 1.4rem;border-radius:6px;font:800 1rem/1.2 Overpass,sans-serif;letter-spacing:.04em;text-decoration:none;background:#ff8a3d;color:#23140b;box-shadow:0 8px 16px -6px rgba(0,0,0,.6),inset 0 -3px 0 rgba(0,0,0,.22);transition:transform .25s cubic-bezier(.16,1,.3,1)}.ds-plank:hover{transform:translateY(-2px);background:#ffc36b}"
+    },
+    {
+      "name": "Arrow Sign",
+      "kind": "nav",
+      "refersTo": "sign-arrow",
+      "description": "Trail-sign navigation link.",
+      "html": "<a class=\"ds-arrow\" href=\"#\">The Plan &rarr;</a>",
+      "css": ".ds-arrow{display:inline-flex;padding:.85rem 2.4rem;background:#4b2f1d;color:#f3e5c5;font:400 1.2rem/1.1 Ultra,serif;text-decoration:none;border-radius:6px;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%);box-shadow:0 10px 24px -8px rgba(0,0,0,.65)}.ds-arrow:hover{background:#a33d14}"
+    },
+    {
+      "name": "Nameplate",
+      "kind": "chip",
+      "refersTo": "nameplate",
+      "description": "Cousin name under a framed portrait.",
+      "html": "<span class=\"ds-name\">Addy</span>",
+      "css": ".ds-name{padding:.35rem .9rem;border-radius:4px;background:#f3e5c5;color:#23140b;font:400 1.05rem/1.2 Ultra,serif;box-shadow:0 4px 8px -2px rgba(0,0,0,.55)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Trailhead",
+    "overview": "A North Georgia trailhead on a snowy night. Routed wood signs carry the countdown, navigation and archives; the ground shifts between night sky, walnut planks and buffalo flannel.",
+    "keyCharacteristics": [
+      "Walnut stain at page scale",
+      "Routed cream wood-type",
+      "Blaze marks for wayfinding",
+      "Night ridgelines with snow",
+      "Flannel for the PJ rule"
+    ],
+    "rules": [
+      {
+        "name": "The Blaze Rule",
+        "body": "State and wayfinding are marks, not new hues.",
+        "section": "colors"
+      },
+      {
+        "name": "No eyebrows",
+        "body": "Labels sit below headings as a blaze-marked sign sub.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Keep signs readable and arrows clickable",
+      "Honor reduced motion"
+    ],
+    "donts": [
+      "No eyebrows or equal icon-card rows",
+      "No invented cabin photos",
+      "Don't restyle archive pages"
+    ]
+  }
+}
