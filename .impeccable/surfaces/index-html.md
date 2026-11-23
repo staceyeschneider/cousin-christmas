@@ -1,26 +1,26 @@
 ---
-version: 1
+version: 3
 slug: "index-html"
 primary_target: "index.html"
-related_targets: []
+related_targets: ["assets/css/2026.css"]
 ---
 
 # Surface: Cousin Christmas 2026 home (index.html)
 
-Mode: Persuade (the visitor, a cousin aged 12-17 on a phone, should get the when/where/what-to-wear in seconds and want to go).
-Audience/job: cousins checking the plan; parents checking address and Sunday.
-Proof/content: real cast portraits, real 2025 photos and videos, real address, map, Airbnb link. No cabin photos exist; none invented.
-Constraints: brief-pinned world is "mountain cabin" (North Georgia mountains, warm wood, firelight, flannel, pine, snow at night). Static HTML/CSS. Year pages keep style.css; this page uses assets/css/cabin.css only.
-Memorable moment: the trailhead signpost. The countdown and the navigation are routed-wood trail signs pointing at the weekend.
+Mode: Persuade (a cousin aged 12-17 on a phone should get the when/where/what-to-wear in seconds and want to go).
+Audience/job: cousins checking the plan; parents checking the address and the Christmas Eve 2 PM potluck.
+Proof/content: real cast portraits, real 2025 photos and videos, real address and map. No photos of the Grayson house; the hero house is original illustration, not a depiction of the real house.
+Constraints: Stacey pinned the theme on Nov 23, 2026: HOME ALONE homage with a playful 90s family-movie-poster feel. Homage only (no copyrighted stills, posters, logos or title typography); clean, non-violent nods. Replaces the "Keys to the House" envelope/key-tag pass and the earlier cabin pass. Static HTML/CSS; this page uses assets/css/2026.css only.
+Memorable moment: the poster hero, where the windows of the house switch on one by one under falling snow beside a VCR counting down to the party.
 
-Grounded candidates (in the cabin world, by resonance): 1 firelit cabin interior with flannel and paneling (literal reading, rut); 2 WPA/national-park screenprint of layered Blue Ridge ridges; 3 Coosawattee resort trail map with topo lines and blazes; 4 summer-camp patch sash and felt pennants; 5 routed-wood Forest Service trail signs on posts at a trailhead; 6 ski-lodge lift tickets and a Polaroid wall; 7 Ellijay apple-house roadside signs.
-Roll: assigned index 5 (routed trail signs). Challenger verdicts: single-hue doll program declined (kept: total commitment to one owned stain colour at page scale); fly-posted festival hoarding declined (kept: one calm cream panel carries the essential facts); film cutting-bench rail declined (kept: state is a mark, not a hue); one-bit desktop declined; gravity-rain garden declined; hand-bent neon declined (kept: one continuous glowing run, the light string).
+Grounded candidates (inside the pinned 90s family-movie world, by resonance): 1 the theatrical one-sheet (title, tagline, billing block; the literal reading); 2 the VHS clamshell box and video-store shelf; 3 the kid's battle-plan blueprint on graph paper; 4 the VCR and CRT in the living room at night; 5 the suburban house at night with every window lit and lights on the roofline; 6 the 90s TV-guide listing; 7 a disposable-camera snapshot wall.
+Roll: assigned index 5 (the house at night), seed key 48bd674c, built as the poster's art since the brief pins the poster feel. Supporting props from candidates 1, 2, 3 and 4 (billing block, tapes, blueprint, VCR/CRT), one per section. Challenger verdicts (executor's call; no decision page was served): split-flap concourse declined (kept: discrete digit changes, the VCR count); Ikeda datamatics declined; cyclorama dawn declined; cloud quarry declined; Swiss grid poster wall competitive on clarity (kept: the strict billing block and one condensed type family doing many jobs); skate-deck wall declined (kept: a shelf of spines as navigation, the Prequels tapes).
 
 ## Direction contract
 
-THESIS: The site is a trailhead. Every section is a routed-wood sign on a post pointing to the weekend; it refuses the category default of a red-and-green holiday card with a centred headline over a row of cards.
-OWN-WORLD: Walnut-stained board (grained, routed cream letters, blaze-orange marks, iron nail heads) set against a night-navy Blue Ridge sky with snow; buffalo-check flannel for the PJ code. Heavy wood-type slab display, highway-gothic sign text.
-STORY: A cousin sees "Cabin Christmas", reads the countdown as trail mileage to Harper's Hideaway, follows the arrows to the plan, the PJ rule, the cabin, the games, the cast, the food, last year's carnage, and the archive trail back to 2022.
-FIRST VIEWPORT: Night ridgelines and falling snow fill the screen. Left: the Cousin Christmas logo, a giant cream "Cabin Christmas" in wood type, date and place line. Right: a signpost of arrow boards; the top board is the countdown ("Harper's Hideaway: 27 days 04 hrs 12 min"), the boards below point to The Plan, The Cabin, Game Room, The Cousins, Archives (the working navigation). On phones the post stacks under the title.
-FORM: Routed Forest Service trail signs, list position 5 of 7, seed key baf41575.
-FINISH: unreviewed and unshipped until inspection, detect, and documentation are complete.
+THESIS: The site is a 90s family holiday movie about the cousins left home alone at Nana & Papa Jack's. It refuses the red-and-green card with a centred headline over a row of cards.
+OWN-WORLD: Night-navy sky with snow, gold lit windows, red title extrusion, snow-white reading grounds; Bowlby One poster display, condensed Archivo billing and labels, marker handwriting for the kids' plan. Props: VCR, blueprint, CRT, ticket, VHS shelf.
+STORY: A cousin sees "Cousins Home Alone," reads the VCR countdown and the billing block with their own name in it, then follows the plan, the PJ rule, the filming location, Jackbox, the cast, the menu ticket (Wednesday takeout, Thursday potluck), last year's carnage, and the prequels back to 2022.
+FIRST VIEWPORT: Night sky, falling snow. Left: "COUSINS" over a huge gold extruded "HOME ALONE," the tagline "Nana & Papa Jack are 'out of town.' The cousins have the run of the place.", the dates and town, two buttons. Right: the VCR countdown above the lit house. Bottom: the billing block on a snow drift. On phones: title, buttons, VCR, house, billing.
+FORM: House at night, list position 5 of 7, seed key 48bd674c.
+FINISH: Built code-led; detector run and documented; no separate reviewer pass.

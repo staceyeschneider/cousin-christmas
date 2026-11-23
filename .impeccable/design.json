@@ -1,95 +1,99 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T21:45:15.210777+00:00",
-  "title": "Design System: Cousin Christmas 2026 \u2014 Cabin Christmas",
+  "generatedAt": "2026-11-23T16:46:41.989696+00:00",
+  "title": "Design System: Cousin Christmas 2026 — Cousins Home Alone",
   "extensions": {
     "colorMeta": {
-      "walnut": {
-        "role": "primary",
-        "displayName": "Walnut Stain"
-      },
-      "cream": {
-        "role": "primary",
-        "displayName": "Routed Cream"
-      },
       "night": {
+        "role": "primary",
+        "displayName": "Poster Night"
+      },
+      "snow": {
+        "role": "primary",
+        "displayName": "Snow"
+      },
+      "gold": {
         "role": "secondary",
-        "displayName": "Blue Ridge Night"
+        "displayName": "Window Light"
       },
-      "blaze": {
+      "red": {
+        "role": "secondary",
+        "displayName": "Title Red"
+      },
+      "blueprint": {
         "role": "tertiary",
-        "displayName": "Trail Blaze"
+        "displayName": "Blueprint"
       },
-      "ember": {
+      "led": {
         "role": "tertiary",
-        "displayName": "Ember"
+        "displayName": "VCR LED"
       },
-      "flannel": {
-        "role": "tertiary",
-        "displayName": "Buffalo Flannel"
-      },
-      "pine": {
-        "role": "tertiary",
-        "displayName": "Pine Plate"
-      },
-      "cream-dim": {
+      "ink": {
         "role": "neutral",
-        "displayName": "Cream Dim"
+        "displayName": "Ink"
+      },
+      "night-text": {
+        "role": "neutral",
+        "displayName": "Night Text"
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Ultra display",
-        "purpose": "Hero title only."
+        "displayName": "Bowlby One poster title",
+        "purpose": "H1 with red extrusion."
       },
       "headline": {
-        "displayName": "Routed section sign",
-        "purpose": "Section headings."
+        "displayName": "Bowlby One headline",
+        "purpose": "Uppercase section heads."
       },
-      "sign": {
-        "displayName": "Sign board",
-        "purpose": "Arrow boards, nameplates, board titles."
+      "hand": {
+        "displayName": "Marker",
+        "purpose": "Kids' handwriting: blueprint, captions, rule numbers, ticket note."
       },
       "body": {
-        "displayName": "Overpass body",
+        "displayName": "Archivo body",
         "purpose": "Running copy."
       },
       "label": {
-        "displayName": "Overpass label",
-        "purpose": "Uppercase sign subs, dates, times."
+        "displayName": "Archivo condensed label",
+        "purpose": "Subs, times, VCR, tapes."
+      },
+      "billing": {
+        "displayName": "Archivo billing block",
+        "purpose": "Poster credits."
       }
     },
     "shadows": [
       {
-        "name": "board",
-        "value": "0 10px 24px -8px rgba(0,0,0,0.65), 0 2px 4px rgba(0,0,0,0.35)",
-        "purpose": "Wood boards and frames."
+        "name": "lift",
+        "value": "0 18px 32px -14px rgba(12,21,48,.55), 0 3px 6px -2px rgba(12,21,48,.3)",
+        "purpose": "Photos, map, ticket, plates."
       },
       {
-        "name": "paper",
-        "value": "0 18px 30px -12px rgba(0,0,0,0.7)",
-        "purpose": "Notices, polaroids, PJ patch."
-      },
-      {
-        "name": "bulb",
-        "value": "0 0 14px 3px rgba(255,195,107,0.55)",
-        "purpose": "String-light bulbs only."
+        "name": "object",
+        "value": "0 30px 50px -20px rgba(0,0,0,.9)",
+        "purpose": "TV and VCR on night."
       }
     ],
     "motion": [
       {
         "name": "settle",
         "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Hover lifts and sign straightening."
+        "purpose": "Hover lifts and tape slide-out."
       },
       {
-        "name": "swing",
-        "value": "1.6s swing keyframes on hero boards",
+        "name": "lights-on",
+        "value": "stepped fill change on hero windows, 0.3s apart",
         "purpose": "The one authored load moment."
       },
       {
         "name": "snow",
         "value": "canvas snowfall in hero",
+        "purpose": "Ambient; off under reduced motion."
+      },
+      {
+        "name": "blink",
+        "value": "VCR play icon and colon",
         "purpose": "Ambient; off under reduced motion."
       }
     ],
@@ -110,60 +114,66 @@
   },
   "components": [
     {
-      "name": "Plank Button",
+      "name": "Pill Button",
       "kind": "button",
-      "refersTo": "button-plank",
-      "description": "Primary external action (directions, cabin listing).",
-      "html": "<a class=\"ds-plank\" href=\"#\">Get directions</a>",
-      "css": ".ds-plank{display:inline-flex;gap:.55rem;padding:.85rem 1.4rem;border-radius:6px;font:800 1rem/1.2 Overpass,sans-serif;letter-spacing:.04em;text-decoration:none;background:#ff8a3d;color:#23140b;box-shadow:0 8px 16px -6px rgba(0,0,0,.6),inset 0 -3px 0 rgba(0,0,0,.22);transition:transform .25s cubic-bezier(.16,1,.3,1)}.ds-plank:hover{transform:translateY(-2px);background:#ffc36b}"
+      "refersTo": "button-primary",
+      "description": "Primary action (See the plan, Get directions).",
+      "html": "<a class=\"ds-btn\" href=\"#\">See the plan</a>",
+      "css": ".ds-btn{display:inline-flex;gap:.55rem;padding:.85rem 1.35rem;border-radius:999px;font:800 1rem/1.2 Archivo,sans-serif;text-decoration:none;background:#d42a2f;color:#f5f7fb;box-shadow:0 8px 16px -8px rgba(158,26,31,.9);transition:transform .25s cubic-bezier(.16,1,.3,1)}.ds-btn:hover{transform:translateY(-2px);background:#9e1a1f}"
     },
     {
-      "name": "Arrow Sign",
+      "name": "VCR Display",
+      "kind": "display",
+      "refersTo": "vcr-display",
+      "description": "Countdown in LED digits.",
+      "html": "<div class=\"ds-vcr\"><span>30</span>:<span>02</span>:<span>15</span></div>",
+      "css": ".ds-vcr{display:inline-flex;gap:.4rem;background:#0a0b12;border-radius:10px;padding:.9rem 1.1rem;color:#7df9c6;font:800 3rem/1 Archivo,sans-serif;font-stretch:62%;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Tape",
       "kind": "nav",
-      "refersTo": "sign-arrow",
-      "description": "Trail-sign navigation link.",
-      "html": "<a class=\"ds-arrow\" href=\"#\">The Plan &rarr;</a>",
-      "css": ".ds-arrow{display:inline-flex;padding:.85rem 2.4rem;background:#4b2f1d;color:#f3e5c5;font:400 1.2rem/1.1 Ultra,serif;text-decoration:none;border-radius:6px;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 50%,calc(100% - 22px) 100%,0 100%);box-shadow:0 10px 24px -8px rgba(0,0,0,.65)}.ds-arrow:hover{background:#a33d14}"
-    },
-    {
-      "name": "Nameplate",
-      "kind": "chip",
-      "refersTo": "nameplate",
-      "description": "Cousin name under a framed portrait.",
-      "html": "<span class=\"ds-name\">Addy</span>",
-      "css": ".ds-name{padding:.35rem .9rem;border-radius:4px;background:#f3e5c5;color:#23140b;font:400 1.05rem/1.2 Ultra,serif;box-shadow:0 4px 8px -2px rgba(0,0,0,.55)}"
+      "refersTo": "tape",
+      "description": "Archive year link as a VHS spine.",
+      "html": "<a class=\"ds-tape\" href=\"#\"><b>2025</b><span>The Great Snowball Battle</span></a>",
+      "css": ".ds-tape{display:grid;grid-template-columns:5.5rem 1fr;gap:.9rem;align-items:center;background:#0a0b12;padding:.55rem .9rem;border-radius:4px;text-decoration:none}.ds-tape b{font:400 1.35rem 'Bowlby One',sans-serif;color:#f5f7fb;background:#d42a2f;text-align:center;border-radius:3px}.ds-tape span{background:#f5f7fb;color:#121a33;padding:.4rem .9rem;border-radius:3px;font:800 1rem Archivo,sans-serif;font-stretch:75%;letter-spacing:.08em;text-transform:uppercase}"
     }
   ],
   "narrative": {
-    "northStar": "The Trailhead",
-    "overview": "A North Georgia trailhead on a snowy night. Routed wood signs carry the countdown, navigation and archives; the ground shifts between night sky, walnut planks and buffalo flannel.",
+    "northStar": "Cousins Home Alone",
+    "overview": "A 90s family-movie poster homage: the grandparents' house at night with windows switching on, a VCR countdown, a billing block of cousins, then one movie prop per section.",
     "keyCharacteristics": [
-      "Walnut stain at page scale",
-      "Routed cream wood-type",
-      "Blaze marks for wayfinding",
-      "Night ridgelines with snow",
-      "Flannel for the PJ rule"
+      "Night poster sky with snow",
+      "Gold lit windows",
+      "Extruded poster title",
+      "Condensed billing block",
+      "Blueprint plan, CRT, ticket, VHS shelf"
     ],
     "rules": [
       {
-        "name": "The Blaze Rule",
-        "body": "State and wayfinding are marks, not new hues.",
+        "name": "Lights on",
+        "body": "Gold marks a lit window or the thing to look at.",
         "section": "colors"
       },
       {
+        "name": "One prop per section",
+        "body": "Each section gets one movie-world object.",
+        "section": "layout"
+      },
+      {
         "name": "No eyebrows",
-        "body": "Labels sit below headings as a blaze-marked sign sub.",
+        "body": "Taglines and subs sit below headings.",
         "section": "typography"
       }
     ],
     "dos": [
-      "Keep signs readable and arrows clickable",
-      "Honor reduced motion"
+      "Original, kid-safe homage",
+      "Honor reduced motion",
+      "Proofread for repeated phrases"
     ],
     "donts": [
-      "No eyebrows or equal icon-card rows",
-      "No invented cabin photos",
-      "Don't restyle archive pages"
+      "No movie stills, posters, logos or title lettering",
+      "No traps or violence",
+      "No invented house features or equipment"
     ]
   }
 }

@@ -4,27 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cousin Christmas 2026 | Cabin Christmas at Harper's Hideaway</title>
-    <meta name="description" content="Cousin Christmas 2026 heads to the mountains: Harper's Hideaway in Ellijay, GA. Cousins sleep over Saturday, December 19. Family potluck at 2 PM and gift exchange Sunday, December 20. Christmas PJs required.">
-    <meta name="theme-color" content="#0d1726">
-    <link rel="preload" href="assets/fonts/ultra-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/overpass-var.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Cousin Christmas 2026 | Cousins Home Alone at Nana &amp; Papa Jack's</title>
+    <meta name="description" content="Cousin Christmas 2026: Cousins Home Alone. Nana &amp; Papa Jack are &ldquo;out of town,&rdquo; so the cousins take over their house in Grayson, GA. Slumber party from noon on Wednesday, December 23, with takeout, Jackbox and games. Family potluck and gift exchange on Thursday, December 24 (Christmas Eve), at 2 PM. Christmas PJs required.">
+    <meta name="theme-color" content="#0c1530">
+    <link rel="canonical" href="https://cousinchristmas.us/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cousin Christmas">
+    <meta property="og:title" content="Cousins Home Alone | Cousin Christmas 2026">
+    <meta property="og:description" content="Slumber party Wednesday, Dec 23 from noon. Family potluck Christmas Eve at 2 PM. Grayson, GA.">
+    <meta property="og:url" content="https://cousinchristmas.us/">
+    <meta property="og:image" content="https://cousinchristmas.us/assets/images/og-2026.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cousins Home Alone: a snowy night, a house with every window lit, Cousin Christmas 2026, Dec 23–24, Grayson, GA.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cousins Home Alone | Cousin Christmas 2026">
+    <meta name="twitter:description" content="Slumber party Wednesday, Dec 23 from noon. Family potluck Christmas Eve at 2 PM. Grayson, GA.">
+    <meta name="twitter:image" content="https://cousinchristmas.us/assets/images/og-2026.png">
+    <meta name="twitter:image:alt" content="Cousins Home Alone: a snowy night, a house with every window lit, Cousin Christmas 2026, Dec 23–24, Grayson, GA.">
+    <link rel="preload" href="assets/fonts/bowlby-one-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/cabin.css">
+    <link rel="stylesheet" href="assets/css/2026.css">
 </head>
 
 <body>
-    <a class="skip" href="#situation">Skip to the plan</a>
+    <a class="skip" href="#setup">Skip to the plan</a>
 
     <header class="topbar">
         <div class="wrap topbar-inner">
             <a href="/" class="topbar-logo"><img src="assets/images/CC-Logo-Transparent.png" alt="Cousin Christmas home" width="500" height="250"></a>
             <nav aria-label="Sections">
                 <ul class="topbar-links">
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#cabin">The Cabin</a></li>
-                    <li><a href="#play">Game Room</a></li>
-                    <li><a href="#cast">Cast</a></li>
+                    <li><a href="#plan">Schedule</a></li>
+                    <li><a href="#location">The House</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#cast">Cousins</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#archives">Archives</a></li>
                 </ul>
@@ -32,172 +48,179 @@
         </div>
     </header>
 
-    <!-- ================= TRAILHEAD (HERO) ================= -->
-    <section class="trailhead" aria-labelledby="title">
-        <div class="sky" aria-hidden="true">
-            <div class="moon"></div>
-            <canvas id="snow"></canvas>
-            <svg class="ridges" viewBox="0 0 1440 420" preserveAspectRatio="none">
-                <path class="r1" d="M0 190 L90 150 L170 175 L260 110 L350 160 L430 120 L520 170 L610 95 L700 150 L790 120 L880 165 L980 90 L1080 150 L1170 115 L1260 160 L1350 120 L1440 150 L1440 420 L0 420Z" />
-                <path class="r2" d="M0 250 L110 205 L200 240 L300 190 L410 235 L500 200 L600 250 L720 185 L830 240 L930 205 L1040 250 L1150 195 L1260 240 L1360 210 L1440 230 L1440 420 L0 420Z" />
-                <path class="r3" d="M0 320 L60 300 L80 270 L100 300 L160 290 L180 255 L200 290 L300 310 L420 285 L440 250 L460 285 L560 300 L700 280 L720 240 L740 280 L860 300 L980 285 L1000 245 L1020 285 L1140 305 L1260 280 L1280 250 L1300 280 L1440 300 L1440 420 L0 420Z" />
-                <path class="snowline" d="M0 380 C 180 350, 360 395, 560 372 S 900 350, 1100 378 S 1340 362, 1440 372 L1440 420 L0 420Z" />
-            </svg>
-        </div>
+    <!-- ================= THE POSTER (HERO) ================= -->
+    <section class="poster" aria-labelledby="title">
+        <canvas id="snow" aria-hidden="true"></canvas>
 
-        <div class="wrap trailhead-grid">
+        <div class="wrap poster-grid">
             <div class="title-block">
-                <img class="hero-logo" src="assets/images/CC-Logo-Transparent.png" alt="" width="500" height="250">
-                <h1 id="title">Cabin<br>Christmas</h1>
-                <p class="hero-where">Cousin Christmas 2026 at <strong>Harper's Hideaway</strong></p>
-                <p class="hero-when"><i class="fa-solid fa-calendar-day" aria-hidden="true"></i> Saturday, December 19 <span aria-hidden="true">&middot;</span> Ellijay, GA</p>
+                <h1 id="title"><span class="t-small">Cousins</span> <span class="t-big">Home Alone</span></h1>
+                <p class="tagline">Nana &amp; Papa Jack are &ldquo;out of town.&rdquo; The cousins have the run of the place.</p>
+                <p class="hero-when"><i class="fa-solid fa-calendar-day" aria-hidden="true"></i> Wed, Dec 23 &ndash; Thu, Dec 24 <span class="hw-dot" aria-hidden="true">&middot;</span> <span>Grayson, GA</span></p>
+                <div class="hero-actions">
+                    <a class="btn" href="#plan"><i class="fa-solid fa-list-check" aria-hidden="true"></i> See the plan</a>
+                    <a class="btn alt" href="#location"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i> Where it is</a>
+                </div>
             </div>
 
-            <div class="signpost">
-                <div class="post" aria-hidden="true"></div>
-                <div class="board board-count" id="countdown" role="timer" aria-live="off">
-                    <span class="board-dest">Harper's Hideaway</span>
-                    <span class="count">
+            <div class="stage">
+                <div class="vcr" id="countdown" role="timer" aria-live="off">
+                    <span class="vcr-top"><span class="vcr-play"><i class="fa-solid fa-play" aria-hidden="true"></i> Play</span><span class="vcr-label">Slumber party starts in</span></span>
+                    <span class="vcr-screen">
                         <span class="count-unit"><span class="count-num" id="days">00</span><span class="count-label">days</span></span>
+                        <span class="colon" aria-hidden="true">:</span>
                         <span class="count-unit"><span class="count-num" id="hours">00</span><span class="count-label">hrs</span></span>
+                        <span class="colon" aria-hidden="true">:</span>
                         <span class="count-unit"><span class="count-num" id="minutes">00</span><span class="count-label">min</span></span>
                     </span>
-                    <span class="board-foot">Doors open Sat, Dec 19 &middot; Noon</span>
+                    <span class="vcr-foot">Wed, Dec 23 &middot; Noon &middot; Grayson</span>
                 </div>
-                <nav aria-label="Trail to the weekend" class="arrows">
-                    <a class="board arrow right" href="#schedule"><span>The Plan</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                    <a class="board arrow left" href="#cabin"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span>The Cabin</span></a>
-                    <a class="board arrow right" href="#play"><span>Game Room</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                    <a class="board arrow left" href="#cast"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span>The Cousins</span></a>
-                </nav>
+                <svg class="house" viewBox="0 0 640 460" aria-hidden="true">
+                    <!-- chimney -->
+                    <rect class="h-wall-dark" x="430" y="70" width="44" height="90" />
+                    <path class="h-snow" d="M424 70 h56 a6 6 0 0 1 0 12 h-56 a6 6 0 0 1 0 -12z" />
+                    <!-- main roof -->
+                    <path class="h-roof" d="M70 210 L320 60 L570 210 Z" />
+                    <path class="h-snow" d="M58 214 L320 52 L582 214 C 560 222, 540 206, 520 216 C 500 226, 470 208, 450 218 C 420 230, 400 210, 370 220 C 340 230, 320 212, 290 222 C 260 232, 240 212, 210 222 C 180 232, 160 212, 130 222 C 100 230, 80 214, 58 214Z" />
+                    <!-- walls -->
+                    <rect class="h-wall" x="92" y="214" width="456" height="206" />
+                    <!-- lights on the roofline -->
+                    <g class="h-lights">
+                        <circle cx="110" cy="226" r="5" /><circle cx="150" cy="230" r="5" /><circle cx="190" cy="226" r="5" /><circle cx="230" cy="230" r="5" /><circle cx="270" cy="226" r="5" /><circle cx="310" cy="230" r="5" /><circle cx="350" cy="226" r="5" /><circle cx="390" cy="230" r="5" /><circle cx="430" cy="226" r="5" /><circle cx="470" cy="230" r="5" /><circle cx="510" cy="226" r="5" />
+                    </g>
+                    <!-- upstairs windows -->
+                    <g class="h-win"><rect class="w2" x="130" y="250" width="70" height="56" /><rect class="w4" x="285" y="250" width="70" height="56" /><rect class="w3" x="440" y="250" width="70" height="56" /></g>
+                    <g class="h-mullion"><path d="M165 250 v56 M130 278 h70 M320 250 v56 M285 278 h70 M475 250 v56 M440 278 h70" /></g>
+                    <!-- attic window -->
+                    <circle class="h-win w6" cx="320" cy="160" r="22" />
+                    <path class="h-mullion" d="M320 138 v44 M298 160 h44" />
+                    <!-- downstairs -->
+                    <g class="h-win"><rect class="w1" x="130" y="336" width="90" height="62" /><rect class="w5" x="420" y="336" width="90" height="62" /></g>
+                    <g class="h-mullion"><path d="M175 336 v62 M130 367 h90 M465 336 v62 M420 367 h90" /></g>
+                    <rect class="h-door" x="290" y="330" width="60" height="90" />
+                    <circle class="h-wreath" cx="320" cy="356" r="14" />
+                    <circle class="h-wreath-hole" cx="320" cy="356" r="6" />
+                    <circle class="h-knob" cx="340" cy="378" r="3" />
+                    <!-- snow ground and bushes -->
+                    <path class="h-bush" d="M92 420 c -10 -40, 40 -40, 40 -10 c 10 -30, 50 -20, 40 10z M508 420 c -10 -40, 40 -40, 40 -10 c 10 -30, 50 -20, 40 10z" />
+                    <path class="h-snow" d="M0 420 C 120 404, 220 428, 320 416 S 520 404, 640 418 L640 460 L0 460Z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="billing">
+            <div class="wrap">
+                <p><span>a Cousin Christmas production</span> <span>starring <b>William</b> <b>Johnny</b> <b>Lindsey</b> <b>Addy</b> <b>Kaylee</b> <b>Luke</b> <b>James</b></span> <span>with Nana &amp; Papa Jack <i>(somewhere else)</i></span> <span>catering by everybody</span> <span>music by whoever has the aux</span> <span>filmed on location at 508 Townsend Street</span></p>
+                <p class="billing-date">Slumber party Dec 23 &middot; Potluck Christmas Eve</p>
             </div>
         </div>
     </section>
 
-    <!-- ================= THE SITUATION ================= -->
-    <section class="section wood" id="situation" aria-labelledby="situation-h">
-        <div class="wrap situation-grid">
-            <div class="notice">
-                <span class="tack tl" aria-hidden="true"></span><span class="tack tr" aria-hidden="true"></span>
-                <h2 id="situation-h">The Situation</h2>
-                <p class="notice-from">A word from the management</p>
-                <p>The Carolyn house is sold, so Cousin Christmas is going on the road. This year we're taking over <strong>Harper's Hideaway</strong>, a cabin in the North Georgia mountains with a game room that frankly should not be legal.</p>
-                <p>You asked for less schedule and more hanging out. Done. No teams. No points. No trophy. Just cousins, Christmas PJs, ping pong, Skee-Ball and an irresponsible amount of takeout.</p>
+    <!-- ================= THE SETUP ================= -->
+    <section class="section snowfield" id="setup" aria-labelledby="setup-h">
+        <div class="wrap setup-grid">
+            <div class="synopsis">
+                <h2 id="setup-h">The Setup</h2>
+                <p class="sub">A word from the management</p>
+                <p>The Carolyn house is sold, so the action moves to Grayson, where the grandparents are conveniently away and their place is <strong>all ours</strong>.</p>
+                <p>You asked for less schedule and more hanging out. Done. No teams. No points. No trophy. Just cousins, pajamas, Jackbox, takeout and a family potluck with way too many desserts.</p>
             </div>
-            <figure class="snapshot">
-                <button type="button" class="snap-btn" data-src="assets/images/IMG_0989-2.jpg" aria-label="Open the crew photo larger">
+            <figure class="still">
+                <button type="button" class="still-btn" data-src="assets/images/IMG_0989-2.jpg" aria-label="Open the crew photo larger">
                     <img src="assets/images/IMG_0989-2.jpg" alt="The whole crew in inflatable Santa and reindeer costumes in front of the Carolyn house" width="2048" height="1463">
                 </button>
-                <figcaption>The crew. The house. The reindeer.</figcaption>
+                <figcaption>The crew and the reindeer, Carolyn house edition.</figcaption>
             </figure>
         </div>
     </section>
 
-    <!-- ================= SCHEDULE ================= -->
-    <section class="section night" id="schedule" aria-labelledby="schedule-h">
+    <!-- ================= THE PLAN (BLUEPRINT) ================= -->
+    <section class="section blueprint" id="plan" aria-labelledby="plan-h">
         <div class="wrap">
-            <div class="sign-head">
-                <h2 id="schedule-h" class="routed">The Plan</h2>
-                <p class="sign-sub">One sleepover, one big family day</p>
-                <p class="lede">Times are suggestions &mdash; this is the year of hang time.</p>
+            <div class="head">
+                <h2 id="plan-h">The Plan</h2>
+                <p class="sub">Operation: Christmas</p>
+                <p class="lede">Drawn up by the cousins. Times are loose; this is the year of hang time.</p>
             </div>
-            <div class="days">
-                <article class="day-board sat">
-                    <header class="day-head">
-                        <h3>Saturday</h3>
-                        <p>December 19 &middot; Cousins only</p>
+            <div class="plan-grid">
+                <article class="plan-box">
+                    <header class="plan-head">
+                        <h3>Wednesday</h3>
+                        <p>December 23 &middot; Cousins only</p>
                     </header>
-                    <ol class="trail">
-                        <li><span class="t-time">Noon</span><span class="t-body"><span class="t-title">Doors Open</span><span class="t-note">Head up to the cabin. Nobody's taking attendance.</span></span></li>
-                        <li><span class="t-time">On arrival</span><span class="t-body"><span class="t-title">PJ Check</span><span class="t-note">Christmas pajamas on. Street clothes go in the bag.</span></span></li>
-                        <li><span class="t-time">All day</span><span class="t-body"><span class="t-title">Game Room Takeover</span><span class="t-note">Ping pong, Skee-Ball, arcade games and darts. Bring your trash talk.</span></span></li>
-                        <li><span class="t-time">Dinner</span><span class="t-body"><span class="t-title">The Great Takeout Vote</span><span class="t-note">Majority rules. Whining is allowed but doesn't count as a vote.</span></span></li>
-                        <li><span class="t-time">Late</span><span class="t-body"><span class="t-title">Sleepover</span><span class="t-note">Jackbox, movies, snacks. Bedtime is a social construct.</span></span></li>
+                    <ol class="checklist">
+                        <li class="star"><span class="c-time">Noon</span><span class="c-body"><span class="c-title">Doors Open</span><span class="c-note">Pajamas on, phones charged, snacks out.</span></span></li>
+                        <li><span class="c-time">Afternoon</span><span class="c-body"><span class="c-title">Games</span><span class="c-note">Jackbox, plus whatever else breaks out.</span></span></li>
+                        <li><span class="c-time">Dinner</span><span class="c-body"><span class="c-title">The Great Takeout Vote</span><span class="c-note">Majority rules. Whining is allowed but doesn't count as a vote.</span></span></li>
+                        <li><span class="c-time">Late</span><span class="c-body"><span class="c-title">Lights Out (Eventually)</span><span class="c-note">Everybody sleeps over. Bedtime is a social construct.</span></span></li>
                     </ol>
                 </article>
-                <article class="day-board sun">
-                    <header class="day-head">
-                        <h3>Sunday</h3>
-                        <p>December 20 &middot; The whole family</p>
+                <article class="plan-box next-day">
+                    <header class="plan-head">
+                        <h3>Thursday</h3>
+                        <p>December 24 &middot; Christmas Eve</p>
                     </header>
-                    <ol class="trail">
-                        <li><span class="t-time">Morning</span><span class="t-body"><span class="t-title">Sleep In</span><span class="t-note">Breakfast happens whenever you surface.</span></span></li>
-                        <li><span class="t-time">Before 2</span><span class="t-body"><span class="t-title">The Family Arrives</span><span class="t-note">Parents, grandparents and at least one extra dog join the party.</span></span></li>
-                        <li><span class="t-time">2 PM</span><span class="t-body"><span class="t-title">Potluck Christmas</span><span class="t-note">Everybody brings a dish. Nobody brings a salad nobody eats.</span></span></li>
-                        <li><span class="t-time">After we eat</span><span class="t-body"><span class="t-title">The Gift Exchange</span><span class="t-note">Presents, chaos and the annual negotiations.</span></span></li>
+                    <ol class="checklist">
+                        <li><span class="c-time">Morning</span><span class="c-body"><span class="c-title">Sleep In</span><span class="c-note">Breakfast happens whenever you surface.</span></span></li>
+                        <li class="star"><span class="c-time">2 PM</span><span class="c-body"><span class="c-title">Family Potluck</span><span class="c-note">The whole family shows up hungry.</span></span></li>
+                        <li><span class="c-time">After we eat</span><span class="c-body"><span class="c-title">The Gift Exchange</span><span class="c-note">Presents, chaos and the annual negotiations.</span></span></li>
                     </ol>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- ================= DRESS CODE ================= -->
-    <section class="section flannel" id="dress-code" aria-labelledby="pj-h">
-        <div class="wrap">
-            <div class="pj-patch">
-                <i class="fa-solid fa-moon pj-moon" aria-hidden="true"></i>
-                <p class="pj-label">Dress code</p>
-                <h2 id="pj-h">It's a Christmas PJ Party</h2>
-                <p>Christmas pajamas are the uniform from the moment you walk in until the family shows up Sunday. Reindeer, plaid, candy canes, a onesie shaped like a gingerbread man &mdash; the louder the better.</p>
-                <ul class="stitches" aria-label="PJ rules">
-                    <li class="req"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Christmas PJs: required</li>
-                    <li><i class="fa-solid fa-star" aria-hidden="true"></i> Matching sets: bonus</li>
-                    <li><i class="fa-solid fa-shoe-prints" aria-hidden="true"></i> Slippers: strongly advised</li>
-                </ul>
-            </div>
+    <!-- ================= WARDROBE ================= -->
+    <section class="section red" id="dress-code" aria-labelledby="pj-h">
+        <div class="wrap pj">
+            <i class="fa-solid fa-moon pj-moon" aria-hidden="true"></i>
+            <h2 id="pj-h">It's a Christmas PJ Party</h2>
+            <p class="sub">Wardrobe department</p>
+            <p class="pj-copy">Christmas pajamas are the cousin uniform for the slumber party and the potluck. Reindeer, plaid, candy canes, a onesie shaped like a gingerbread man &mdash; the louder the better.</p>
+            <ul class="stickers" aria-label="PJ rules">
+                <li class="req">Christmas PJs: required</li>
+                <li>Matching sets: bonus</li>
+                <li>Slippers: strongly advised</li>
+            </ul>
         </div>
     </section>
 
-    <!-- ================= THE CABIN ================= -->
-    <section class="section wood" id="cabin" aria-labelledby="cabin-h">
-        <div class="wrap cabin-grid">
-            <div class="cabin-copy">
-                <h2 id="cabin-h" class="routed">Harper's Hideaway</h2>
-                <p class="sign-sub">The venue &middot; New address. Same chaos.</p>
-                <div class="address-plate">
-                    <span class="plate-num">46</span>
-                    <span class="plate-text"><strong>Pelican Dr</strong><span>Ellijay, GA 30540</span></span>
+    <!-- ================= LOCATION ================= -->
+    <section class="section snowfield" id="location" aria-labelledby="loc-h">
+        <div class="wrap loc-grid">
+            <div class="loc-copy">
+                <h2 id="loc-h">Filming Location</h2>
+                <p class="sub">Nana &amp; Papa Jack's</p>
+                <div class="address">
+                    <span class="addr-num">508</span>
+                    <span class="addr-text"><strong>Townsend Street</strong><span>Grayson, GA</span></span>
                 </div>
-                <p class="cabin-where">Inside the Coosawattee River Resort, about 30 minutes from Blue Ridge.</p>
-                <ul class="blazes">
-                    <li><span class="blaze" aria-hidden="true"></span><span>A real game room: ping pong, Skee-Ball, arcade games and darts.</span></li>
-                    <li><span class="blaze" aria-hidden="true"></span><span>Five bedrooms with beds for ten, plus a sofa bed for whoever loses at Skee-Ball.</span></li>
-                    <li><span class="blaze" aria-hidden="true"></span><span>Dogs welcome, so the pups are coming too.</span></li>
-                </ul>
-                <div class="plank-row">
-                    <a class="plank" href="https://www.google.com/maps/search/?api=1&amp;query=46+Pelican+Dr,+Ellijay,+GA+30540" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Get directions</a>
-                    <a class="plank alt" href="https://www.airbnb.com/rooms/634738951802266824" target="_blank" rel="noopener"><i class="fa-solid fa-house" aria-hidden="true"></i> See the cabin</a>
-                </div>
+                <p>The grandparents' place, on loan for Christmas.</p>
+                <h3 class="rules-h">House rules (unofficial)</h3>
+                <ol class="rules">
+                    <li>PJs on at the door.</li>
+                    <li>Leave it how you found it. Roughly.</li>
+                    <li>What happens at Nana's ends up in next year's gallery.</li>
+                </ol>
+                <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=508+Townsend+Street,+Grayson,+GA" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Get directions</a>
             </div>
-            <div class="map-frame">
-                <iframe title="Map to Harper's Hideaway" src="https://maps.google.com/maps?q=46%20Pelican%20Dr%2C%20Ellijay%2C%20GA%2030540&amp;z=13&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <figure class="map-frame">
+                <iframe title="Map to 508 Townsend Street, Grayson, GA" src="https://maps.google.com/maps?q=508%20Townsend%20Street%2C%20Grayson%2C%20GA&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
         </div>
     </section>
 
-    <!-- ================= FREE PLAY ================= -->
-    <section class="section night lit" id="play" aria-labelledby="play-h">
-        <div class="lights" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="wrap">
-            <div class="sign-head">
-                <h2 id="play-h" class="routed">Free Play</h2>
-                <p class="sign-sub">The real main event</p>
-                <p class="lede">No schedule, no scoreboard. Grab a paddle, a dart or a controller and go.</p>
+    <!-- ================= GAMES (TV) ================= -->
+    <section class="section night" id="games" aria-labelledby="games-h">
+        <div class="wrap games-grid">
+            <div class="head">
+                <h2 id="games-h">Now Playing</h2>
+                <p class="sub">Game night</p>
+                <p class="lede">No schedule, no scoreboard. Grab your phone and join the room.</p>
             </div>
-            <div class="play-wall">
-                <section class="play-board game" aria-labelledby="pb-game">
-                    <h3 id="pb-game"><i class="fa-solid fa-table-tennis-paddle-ball" aria-hidden="true"></i> Game Room</h3>
-                    <ul>
-                        <li>Ping Pong</li>
-                        <li>Skee-Ball</li>
-                        <li>Arcade Games</li>
-                        <li>Darts</li>
-                    </ul>
-                </section>
-                <section class="play-board jack" aria-labelledby="pb-jack">
-                    <h3 id="pb-jack"><i class="fa-solid fa-gamepad" aria-hidden="true"></i> Jackbox</h3>
+            <div class="tv">
+                <div class="tv-screen">
+                    <h3 id="jb-h"><i class="fa-solid fa-gamepad" aria-hidden="true"></i> Jackbox</h3>
                     <ul>
                         <li>Trivia Murder Party</li>
                         <li>Quiplash</li>
@@ -205,50 +228,51 @@
                         <li>You Don't Know Jack</li>
                         <li>Fakin' It</li>
                     </ul>
-                </section>
+                </div>
+                <span class="tv-knobs" aria-hidden="true"><span></span><span></span></span>
             </div>
         </div>
     </section>
 
     <!-- ================= CAST ================= -->
-    <section class="section wood" id="cast" aria-labelledby="cast-h">
+    <section class="section snowfield" id="cast" aria-labelledby="cast-h">
         <div class="wrap">
-            <div class="sign-head">
-                <h2 id="cast-h" class="routed">The Cousins</h2>
-                <p class="sign-sub">Starring</p>
-                <p class="lede">Seven cousins. No teams. One cabin in the mountains.</p>
+            <div class="head">
+                <h2 id="cast-h">Starring</h2>
+                <p class="sub">The cousins</p>
+                <p class="lede">Seven cousins. One borrowed house.</p>
             </div>
             <ul class="cast">
-                <li><button type="button" class="frame" data-src="assets/images/William.png"><img src="assets/images/William.png" alt="William" loading="lazy" width="1024" height="1536"></button><span class="nameplate">William</span></li>
-                <li><button type="button" class="frame" data-src="assets/images/Johnny.png"><img src="assets/images/Johnny.png" alt="Johnny" loading="lazy" width="1024" height="1536"></button><span class="nameplate">Johnny</span></li>
-                <li><button type="button" class="frame" data-src="assets/images/Lindsey.png"><img src="assets/images/Lindsey.png" alt="Lindsey" loading="lazy" width="1024" height="1536"></button><span class="nameplate">Lindsey</span></li>
-                <li><button type="button" class="frame" data-src="assets/images/Adele.png"><img src="assets/images/Adele.png" alt="Addy" loading="lazy" width="1024" height="1536"></button><span class="nameplate">Addy</span></li>
-                <li><button type="button" class="frame" data-src="assets/images/Kaylee.png"><img src="assets/images/Kaylee.png" alt="Kaylee" loading="lazy" width="1024" height="1536"></button><span class="nameplate">Kaylee</span></li>
-                <li><button type="button" class="frame" data-src="assets/images/Luke.png"><img src="assets/images/Luke.png" alt="Luke" loading="lazy" width="1024" height="1536"></button><span class="nameplate">Luke</span></li>
-                <li><button type="button" class="frame" data-src="assets/images/James.png"><img src="assets/images/James.png" alt="James" loading="lazy" width="1024" height="1536"></button><span class="nameplate">James</span></li>
+                <li><button type="button" class="frame" data-src="assets/images/William.png"><img src="assets/images/William.png" alt="William" loading="lazy" width="1024" height="1536"></button><span class="name">William</span></li>
+                <li><button type="button" class="frame" data-src="assets/images/Johnny.png"><img src="assets/images/Johnny.png" alt="Johnny" loading="lazy" width="1024" height="1536"></button><span class="name">Johnny</span></li>
+                <li><button type="button" class="frame" data-src="assets/images/Lindsey.png"><img src="assets/images/Lindsey.png" alt="Lindsey" loading="lazy" width="1024" height="1536"></button><span class="name">Lindsey</span></li>
+                <li><button type="button" class="frame" data-src="assets/images/Adele.png"><img src="assets/images/Adele.png" alt="Addy" loading="lazy" width="1024" height="1536"></button><span class="name">Addy</span></li>
+                <li><button type="button" class="frame" data-src="assets/images/Kaylee.png"><img src="assets/images/Kaylee.png" alt="Kaylee" loading="lazy" width="1024" height="1536"></button><span class="name">Kaylee</span></li>
+                <li><button type="button" class="frame" data-src="assets/images/Luke.png"><img src="assets/images/Luke.png" alt="Luke" loading="lazy" width="1024" height="1536"></button><span class="name">Luke</span></li>
+                <li><button type="button" class="frame" data-src="assets/images/James.png"><img src="assets/images/James.png" alt="James" loading="lazy" width="1024" height="1536"></button><span class="name">James</span></li>
             </ul>
         </div>
     </section>
 
     <!-- ================= MENU ================= -->
-    <section class="section wood tight" id="menu" aria-labelledby="menu-h">
+    <section class="section snowfield cool" id="menu" aria-labelledby="menu-h">
         <div class="wrap">
-            <div class="menu-board">
-                <div class="menu-title">
+            <div class="ticket">
+                <div class="ticket-top">
                     <h2 id="menu-h">The Menu</h2>
-                    <p class="sign-sub">Now serving</p>
-                    <p class="menu-lede">Low effort, high flavor. Exactly how a cabin weekend should go.</p>
+                    <p class="sub">Concessions</p>
                 </div>
-                <dl class="menu-list">
-                    <div class="menu-item">
-                        <dt><span class="menu-day">Saturday</span> Takeout Vote</dt>
+                <dl class="ticket-body">
+                    <div class="ticket-item">
+                        <dt><span class="ticket-when">Wednesday &middot; Dinner</span> Takeout</dt>
                         <dd>Decided live, by democracy, on the day.</dd>
                     </div>
-                    <div class="menu-item">
-                        <dt><span class="menu-day">Sunday &middot; 2 PM</span> Potluck Christmas</dt>
+                    <div class="ticket-item">
+                        <dt><span class="ticket-when">Thursday &middot; 2 PM</span> Christmas Eve Potluck</dt>
                         <dd>Everybody brings a dish. Sign-ups coming soon.</dd>
                     </div>
                 </dl>
+                <p class="ticket-note">Serves: everyone. Prep time: the night before, ideally.</p>
             </div>
         </div>
     </section>
@@ -256,9 +280,9 @@
     <!-- ================= GALLERY ================= -->
     <section class="section night" id="gallery" aria-labelledby="gallery-h">
         <div class="wrap">
-            <div class="sign-head">
-                <h2 id="gallery-h" class="routed">Last Year's Carnage</h2>
-                <p class="sign-sub">Rewind</p>
+            <div class="head">
+                <h2 id="gallery-h">Last Year's Carnage</h2>
+                <p class="sub">Previously</p>
                 <p class="lede">2025: The Great Snowball Battle. Tap the videos for sound. Exhibit A for why we're keeping it chill this year.</p>
             </div>
             <ul class="wall">
@@ -276,28 +300,27 @@
         </div>
     </section>
 
-    <!-- ================= ARCHIVES ================= -->
-    <section class="section wood archives" id="archives" aria-labelledby="archives-h">
+    <!-- ================= ARCHIVES (VHS SHELF) ================= -->
+    <section class="section snowfield" id="archives" aria-labelledby="archives-h">
         <div class="wrap archives-grid">
-            <div>
-                <h2 id="archives-h" class="routed">The Archives</h2>
-                <p class="sign-sub">Greatest hits</p>
+            <div class="head">
+                <h2 id="archives-h">The Prequels</h2>
+                <p class="sub">Greatest hits</p>
                 <p class="lede">Years of questionable decisions at the Carolyn house.</p>
             </div>
-            <div class="signpost back">
-                <div class="post" aria-hidden="true"></div>
-                <nav aria-label="Past years" class="arrows">
-                    <a class="board arrow left" href="/2025"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span><b>2025</b> The Great Snowball Battle</span></a>
-                    <a class="board arrow left" href="/2024"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span><b>2024</b> The Nutcracker</span></a>
-                    <a class="board arrow left" href="/2023"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span><b>2023</b> Casino</span></a>
-                    <a class="board arrow left" href="/2022"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i><span><b>2022</b> Reindeer Games</span></a>
-                </nav>
-            </div>
+            <nav aria-label="Past years" class="shelf">
+                <ul>
+                    <li><a class="tape t25" href="/2025"><b>2025</b><span>The Great Snowball Battle</span></a></li>
+                    <li><a class="tape t24" href="/2024"><b>2024</b><span>The Nutcracker</span></a></li>
+                    <li><a class="tape t23" href="/2023"><b>2023</b><span>Casino</span></a></li>
+                    <li><a class="tape t22" href="/2022"><b>2022</b><span>Reindeer Games</span></a></li>
+                </ul>
+            </nav>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="wrap">&copy; 2026 Schneider Family Corp. New address. Same chaos.</div>
+        <div class="wrap">&copy; 2026 Schneider Family Corp. Keep the change, ya filthy animals.</div>
     </footer>
 
     <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo and video viewer" hidden>
@@ -307,9 +330,9 @@
     </div>
 
     <script>
-        // Countdown to Saturday, Dec 19, 2026, noon Eastern
+        // Countdown to Wednesday, Dec 23, 2026, noon Eastern (slumber party starts)
         (function () {
-            const target = new Date('2026-12-19T12:00:00-05:00').getTime();
+            const target = new Date('2026-12-23T12:00:00-05:00').getTime();
             const box = document.getElementById('countdown');
             const d = document.getElementById('days');
             const h = document.getElementById('hours');
@@ -318,8 +341,9 @@
             function tick() {
                 const diff = target - Date.now();
                 if (diff <= 0) {
-                    box.innerHTML = '<span class="board-dest">Harper\'s Hideaway</span><span class="count-done">The doors are open. Get in here.</span>';
                     clearInterval(timer);
+                    box.querySelector('.vcr-label').textContent = 'Now playing';
+                    box.querySelector('.vcr-screen').innerHTML = '<span class="count-done">The house is ours</span>';
                     return;
                 }
                 d.textContent = String(Math.floor(diff / 86400000)).padStart(2, '0');
@@ -330,7 +354,7 @@
             tick();
         })();
 
-        // Snow over the ridges
+        // Snow over the poster
         (function () {
             if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
             const c = document.getElementById('snow');
@@ -338,7 +362,7 @@
             let flakes = [];
             function size() {
                 c.width = c.offsetWidth; c.height = c.offsetHeight;
-                const n = Math.round(c.width / 9);
+                const n = Math.round(c.width / 10);
                 flakes = Array.from({ length: n }, () => ({
                     x: Math.random() * c.width, y: Math.random() * c.height,
                     r: Math.random() * 2.2 + 0.6, s: Math.random() * 0.7 + 0.25, w: Math.random() * 0.5 - 0.25
@@ -346,7 +370,7 @@
             }
             function draw() {
                 ctx.clearRect(0, 0, c.width, c.height);
-                ctx.fillStyle = 'rgba(244, 236, 220, 0.85)';
+                ctx.fillStyle = 'rgba(245, 247, 251, 0.85)';
                 for (const f of flakes) {
                     f.y += f.s; f.x += f.w;
                     if (f.y > c.height) { f.y = -5; f.x = Math.random() * c.width; }
